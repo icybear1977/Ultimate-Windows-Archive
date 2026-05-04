@@ -6,90 +6,82 @@
     <title>The Ultimate Windows Archive</title>
     <style>
         :root {
-            --bg-dark: #111111;
-            --box-bg: #1e1e1e;
-            --text-main: #f0f0f0;
-            --text-muted: #aaaaaa;
-            --win-blue: #0078d4;
-            --win-blue-hover: #005a9e;
-            --border-color: #333333;
+            /* Professional Steel & Charcoal Theme */
+            --bg-color: #4a5568;
+            --box-bg: #1a202c;
+            --text-main: #edf2f7;
+            --text-muted: #a0aec0;
+            --win-blue: #4299e1;
+            --border-color: #2d3748;
+            --warn-yellow: rgba(255, 230, 0, 0.1);
+            --warn-text: #ecc94b;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-dark);
-            color: var(--text-main);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-attachment: fixed;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
             padding: 20px;
+            color: var(--text-main);
         }
 
         .archive-box {
             background-color: var(--box-bg);
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
             width: 100%;
-            max-width: 550px;
+            max-width: 600px;
             border: 1px solid var(--border-color);
         }
 
-        h1 {
-            text-align: center;
-            margin-top: 0;
-            font-size: 24px;
-        }
+        h1 { text-align: center; margin-top: 0; color: var(--win-blue); font-size: 28px; }
+        p.description { text-align: center; color: var(--text-muted); font-size: 14px; margin-bottom: 30px; }
 
-        p.description {
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 14px;
-            margin-bottom: 25px;
-        }
-
-        .step {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            font-size: 14px;
-        }
+        .step { margin-bottom: 25px; }
+        label { display: block; margin-bottom: 10px; font-weight: bold; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--win-blue); }
 
         select {
             width: 100%;
-            padding: 10px;
-            border-radius: 5px;
+            padding: 12px;
+            border-radius: 8px;
             border: 1px solid var(--border-color);
-            background-color: #2a2a2a;
+            background-color: #2d3748;
             color: white;
             font-size: 15px;
             cursor: pointer;
+            transition: border-color 0.2s;
         }
 
-        select:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
+        select:focus { outline: none; border-color: var(--win-blue); }
+        select:disabled { opacity: 0.3; cursor: not-allowed; }
+        .hidden { display: none; }
 
-        select:focus {
-            outline: none;
-            border-color: var(--win-blue);
-        }
-
-        .hidden {
-            display: none;
+        .warning-box {
+            background: var(--warn-yellow);
+            color: var(--warn-text); 
+            padding: 18px; 
+            border-radius: 8px; 
+            margin: 20px 0;
+            font-size: 14px; 
+            text-align: center; 
+            border: 1px solid rgba(236, 201, 75, 0.3);
+            line-height: 1.6;
         }
 
         #download-section {
-            margin-top: 30px;
+            margin-top: 35px;
             text-align: center;
-            padding-top: 20px;
+            padding-top: 25px;
             border-top: 1px solid var(--border-color);
         }
 
@@ -98,344 +90,307 @@
             background-color: var(--win-blue);
             color: white;
             text-decoration: none;
-            padding: 12px 24px;
-            border-radius: 5px;
+            padding: 15px 35px;
+            border-radius: 8px;
             font-weight: bold;
-            font-size: 16px;
-            transition: background-color 0.2s;
+            font-size: 17px;
+            transition: all 0.2s;
         }
 
-        .download-btn:hover {
-            background-color: var(--win-blue-hover);
-        }
+        .download-btn:hover { background-color: #3182ce; transform: translateY(-2px); }
 
-        .warning-box {
-            background-color: #332b00; 
-            color: #ffcc00; 
-            padding: 12px; 
+        .btn-link {
+            background-color: var(--warn-text); 
+            color: #000; 
+            padding: 7px 14px; 
+            text-decoration: none; 
             border-radius: 5px; 
-            margin-top: 10px; 
-            margin-bottom: 10px;
-            font-size: 14px; 
-            text-align: center; 
-            border: 1px solid #ffcc00; 
-            font-weight: bold;
+            font-weight: bold; 
+            display: inline-block;
+            margin: 8px 5px 0 5px;
+            font-size: 12px;
         }
     </style>
 </head>
 <body>
 
     <div class="archive-box">
-        <h1>Ultimate Windows Archive</h1>
-        <p class="description">Select your OS to find the official archive link.</p>
+        <h1>Windows Archive</h1>
+        <p class="description">Historical builds, mirrors, and boot media.</p>
 
-        <!-- Step 1: Version -->
+        <!-- Step 1: Version Selection -->
         <div class="step">
-            <label for="version-select">1. Choose Version</label>
+            <label for="version-select">1. Operating System</label>
             <select id="version-select">
-                <option value="" disabled selected>-- Select an OS --</option>
+                <option value="" disabled selected>-- Select OS --</option>
             </select>
         </div>
 
         <div id="custom-message" class="warning-box hidden"></div>
 
-        <!-- Step 2: Build -->
+        <!-- Step 2: Series Selection -->
+        <div class="step hidden" id="update-step">
+            <label for="update-select">2. Product Series</label>
+            <select id="update-select"></select>
+        </div>
+
+        <!-- Step 3: Build Selection -->
         <div class="step">
-            <label for="build-select">2. Choose Build</label>
+            <label for="build-select">3. Select Build</label>
             <select id="build-select" disabled>
-                <option value="" disabled selected>-- Select a Build --</option>
+                <option value="" disabled selected>-- Select Build --</option>
             </select>
         </div>
 
         <div id="build-message" class="warning-box hidden"></div>
 
-        <!-- Step 3: Edition -->
+        <!-- Step 4: Edition Selection -->
         <div class="step hidden" id="edition-step">
-            <label for="edition-select">3. Choose Edition</label>
-            <select id="edition-select">
-                <option value="" disabled selected>-- Select an Edition --</option>
-            </select>
+            <label for="edition-select">4. Choose Edition</label>
+            <select id="edition-select"></select>
         </div>
 
-        <!-- Step 4: Architecture -->
+        <!-- Step 5: Architecture Selection -->
         <div class="step hidden" id="arch-step">
-            <label for="arch-select">4. Choose Architecture</label>
-            <select id="arch-select">
-                <option value="" disabled selected>-- Select an Architecture --</option>
-            </select>
+            <label for="arch-select">5. Architecture</label>
+            <select id="arch-select"></select>
         </div>
 
-        <!-- The Final Download Link -->
         <div id="download-section" class="hidden">
-            <a id="download-btn" class="download-btn" href="#" download>Download Build</a>
+            <a id="download-btn" class="download-btn" href="#" target="_blank">Download</a>
         </div>
     </div>
 
     <script>
-        // ==========================================
-        // DATABASE EXAMPLES (You can paste your real ones over this!)
-        // ==========================================
-        
         const windowsDatabase = {
-           "Windows 1.0": {
-                hasEditions: false,
-                message: "⚠️ Warning: Windows 1.0 requires MS-DOS 3.30 to run. It is not bootable on its own!<br><br><a href='https://archive.org/download/acer-dos-3.3/disk.img' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download MS-DOS 3.30</a>",
-                builds: {
-                    "Development Build #5": "https://archive.org/download/windows-1.0-development-release-5_202107/Development%20Release%20%235.7z",
-                    "Alpha": "https://archive.org/download/windows-1.0-alpha_202107/Alpha%20Release.7z",
-                    "Beta": "https://archive.org/download/windows-1.0-beta_202107/Beta%20Release.7z",
-                    "Premiere Edition": "https://archive.org/download/windows-1.0-premiere-edition_202107/Premiere%20Edition.7z",
-                    "1.xx": "https://archive.org/download/windows-1.xx/Windows%201.xx.7z",
-                    "1.01 (RTM)": "https://archive.org/download/windows-1.01_202107/Windows%201.01.7z",
-                    "1.02": "https://archive.org/download/windows-1.02_202107/Windows%201.02.7z",
-                    "1.03": "https://archive.org/download/windows-1.03/Windows%201.03.7z",
-                    "1.04": "https://archive.org/download/windows-1.04_202107/Windows%201.04.rar"
-                }
+            "Windows 1.0": {
+                message: "⚠️ Windows 1.0 requires MS-DOS 3.30 to run. It is not bootable on its own!<br><a href='https://archive.org/download/acer-dos-3.3/disk.img' class='btn-link'>MS-DOS 3.3</a>",
+                updates: { "Beta Releases": { 
+                            "Development Build #5": "https://archive.org/download/windows-1.0-development-release-5_202107/Development%20Release%20%235.7z",
+                            "Alpha": "https://archive.org/download/windows-1.0-alpha_202107/Alpha%20Release.7z", 
+                            "Beta": "https://archive.org/download/windows-1.0-beta_202107/Beta%20Release.7z",
+                            "Premiere Edition": "https://archive.org/download/windows-1.0-premiere-edition_202107/Premiere%20Edition.7z",
+                            "1.xx": "https://archive.org/download/windows-1.xx/Windows%201.xx.7z" },
+                          "Final Releases": {
+                            "1.01 (RTM)": "https://archive.org/download/windows-1.01_202107/Windows%201.01.7z",
+                            "1.02": "https://archive.org/download/windows-1.02_202107/Windows%201.02.7z",
+                            "1.03": "https://archive.org/download/windows-1.03/Windows%201.03.7z",
+                            "1.04": "https://archive.org/download/windows-1.04_202107/Windows%201.04.rar"
+                          } }
             },
             "Windows 2.0": {
-                hasEditions: false,
-                message: "⚠️ Warning: Windows 2.0 requires MS-DOS 3.30 to run. It is not bootable on its own!<br><br><a href='https://archive.org/download/acer-dos-3.3/disk.img' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download MS-DOS 3.30</a>",
-                builds: {
-                    "/386 2.01": "https://archive.org/download/windows386-2.01/Windows386%202.01.rar",
+                message: "⚠️ Windows 2.0 requires MS-DOS 3.30 to run. It is not bootable on its own!<br><br><a href='https://archive.org/download/acer-dos-3.3/disk.img' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download MS-DOS 3.30</a>",
+                updates: { "Beta Releases": {
+                    "/386 2.01": "https://archive.org/download/windows386-2.01/Windows386%202.01.rar"},
+                    "2.03": {
                     "2.03 (RTM)": "https://archive.org/download/windows-2.03/Windows%202.03.7z",
-                    "/386 2.03": "https://archive.org/download/windows386-2.03/Windows386%202.03.rar",
+                    "/386 2.03": "https://archive.org/download/windows386-2.03/Windows386%202.03.rar"},
+                    "2.1": {
                     "/286 2.1": "https://archive.org/download/microsoft-windows-286-v2.1/Microsoft%20-%20Windows%20v2.1-286%20%5B5.25-360K%20Floppy%5D.zip",
-                    "/386 2.1": "https://archive.org/download/windows386-2.1/Windows386%202.1.7z",
-                    "/286 2.11": "",
-                    "/386 2.11": "https://archive.org/download/windows386-2.11/Windows386%202.11.7z"
+                    "/386 2.1": "https://archive.org/download/windows386-2.1/Windows386%202.1.7z"},
+                    "2.11": {
+                    "/386 2.11": "https://archive.org/download/windows386-2.11/Windows386%202.11.7z"}
                 }
             },
             "Windows 3.0": {
-                hasEditions: false,
-                message: "⚠️ Warning: Windows 3.0 requires MS-DOS 6.22 to run. It is not bootable on its own!<br><br><a href='https://archive.org/download/ms-dos-6.22_202501/MS-DOS%206.22.iso' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download MS-DOS 6.22</a>",
-                builds: {
+                message: "⚠️ Windows 3.0 requires MS-DOS 6.22 to run. It is not bootable on its own!<br><br><a href='https://archive.org/download/ms-dos-6.22_202501/MS-DOS%206.22.iso' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download MS-DOS 6.22</a>",
+                updates: { "Pre-Releases": {
                     "14": "https://archive.org/download/windows-3.0-build-14/Windows%203.0%20build%2014.7z",
                     "52": "https://archive.org/download/win-3.0-build-52/WIN30-52.7z",
                     "55": "https://winworldpc.com/download/2f0fc692-c3a5-e282-ac41-11c3a5c28f13/from/c3ae6ee2-8099-713d-3411-c3a6e280947e",
                     "59": "https://archive.org/download/w-3-159-x/W3-159-X.zip",
-                    "RC6": "https://archive.org/download/windows-3.0-disks/Microsoft%20Windows%203.0%20%283.0%20RC%206%20Beta%29.zip",
+                    "RC6": "https://archive.org/download/windows-3.0-disks/Microsoft%20Windows%203.0%20%283.0%20RC%206%20Beta%29.zip"},
+                    "Final Releases": {
                     "3.00 (RTM)": "https://archive.org/download/windows_3.00_english_with_ms-dos_6.22_eng/Windows%203.0%20English%20for%20VMware%20Workstation%20%2812Pro%29.zip",
                     "3.00 Working Model": "https://archive.org/download/windows-3.0-working-model-windows-series/Windows%203.0%20Working%20Model%20-%20Preinstalled%20VM%20%28VMWare%29.zip",
-                    "3.00a": "https://archive.org/download/windows-3.00a/Windows%203.00a.rar",
-                    "Windows 3.0 with Multimedia Extensions": "https://archive.org/download/windows-3.0-mme/WIN3MME.ISO"
+                    "3.00a": "https://archive.org/download/windows-3.00a/Windows%203.00a.rar",},
+                    "MME": {
+                    "Windows 3.0 with Multimedia Extensions": "https://archive.org/download/windows-3.0-mme/WIN3MME.ISO" }
                 }
             },
-            "Windows 3.1 & 3.11": {
-                hasEditions: false,
-                message: "⚠️ Warning: Windows 3.1 & 3.11 require MS-DOS 6.22 to run. They are not bootable on their own!<br><br><a href='https://archive.org/download/ms-dos-6.22_202501/MS-DOS%206.22.iso' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download MS-DOS 6.22</a>",
-                builds: {
-                    "Build 14 (Alpha)": "#",
-                    "Build 26 (Beta 1)": "#",
-                    "Build 34e (Beta 2)": "#",
-                    "Build 43e (Beta 2)": "#",
-                    "Build 61d (RC)": "#",
-                    "Build 68 (RC2)": "#",
-                    "Build 103 (3.1 RTM)": "#",
-                    "Windows for Workgroups 3.1": "#",
-                    "Windows 3.11 RTM": "#",
-                    "Windows for Workgroups 3.11 RTM": "#"
-                }
-            },
-            "Windows 95 (Chicago)": {
-                hasEditions: false,
-                buildMessages: {
-                    "Build 58s": "⚠️ Warning: Chicago 58s is highly unstable and requires a special DOS boot sequence.<br><br><a href='#' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download Chicago 5 Boot Disk</a>"
+            "Widows 3.1": {
+                message: "⚠️ Windows 3.1 requires MS-DOS 6.22 to run. It is not bootable on its own!<br><br><a href='https://archive.org/download/ms-dos-6.22_202501/MS-DOS%206.22.iso' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download MS-DOS 6.22</a>",
+                updates: { "Pre Releases": {
+                    "26": "",
+                    "34f (Beta 1)": "",
+                    "43e (Beta 2)": "",
+                    "57": "",
+                    "60": "",
+                    "61d (Final Beta)": "",
+                    "103 RC 1992-03-02": "",
+                    "103 RC 1992-03-10": "",
                 },
-                builds: {
-                    "Build 58s": "#",
-                    "Build 73g (Beta 1)": "#",
-                    "Build 81": "#",
-                    "Build 90": "#",
-                    "Build 122 (Beta 2)": "#",
-                    "Build 189": "#",
-                    "Build 216": "#",
-                    "Build 224": "#",
-                    "Build 347": "#",
-                    "Build 468 (May Test Release)": "#",
-                    "Build 950 (RTM)": "#",
-                    "OSR1 (Build 950a)": "#",
-                    "OSR2 (Build 1111)": "#",
-                    "OSR2.5 (Build 1214)": "#"
+                "Release": {
+                    "103 (3.1 RTM)": ""
+                },
+                "3.11": {
+                    "002 (RTM)": "",
+                },
+                "Windows for Workgroups 3.1": {
+                    "Beta 1": "",
+                    "14e (Beta 2)": "",
+                    "24": "",
+                    "27 (Final Beta)": "",
+                    "102 (RTM)": "",
+
+                },
+                "Windows for Workgroups 3.11": {
+                    "026 (Beta 1)": "",
+                    "048 (Beta 2)": "",
+                    "070 (Beta 3)": "",
+                    "100 (RC1)": "",
+                    "300 RC (1993-10-13)": "",
+                    "300 RC (1993-10-21)": "",
+                    "300 (RTM)": "",
                 }
+
+                },
             },
-            "Windows Nashville (96)": {
-                hasEditions: false,
-                message: "Nashville was a canceled update to Windows 95.",
-                builds: {
-                    "Build 999": "https://archive.org/details/WindowsNashvilleBuild999"
-                }
+
+
+
+            "Windows 95": {
+                message: "⚠️ Warning: Most 95 versions require a boot disk to start the installer.",
+                buildMessages: { 
+                    "Build 950 (RTM)": "⚠️ This specific CD is non-bootable.<br><a href='#' class='btn-link'>Download Boot Disk</a>" 
+                },
+                updates: { "Original & OSR": { "Build 950 (RTM)": "LINK", "Build 1111 (OSR2)": "LINK" } }
             },
-            "Windows NT 3.1": {
-                hasEditions: true,
-                message: "Note: Windows NT is an independent OS. It does not require MS-DOS.",
-                builds: {
-                    "October 1991 Pre-Release": { "Standard": "https://archive.org/details/nt-3.1-oct-1991" },
-                    "Build 196": { "Standard": "#" },
-                    "Build 297": { "Standard": "#" },
-                    "Build 340 (Beta 2)": { "Workstation": "#", "Advanced Server": "#" },
-                    "Build 438": { "Workstation": "#", "Advanced Server": "#" },
-                    "Build 528 (RTM)": { "Workstation": "https://winworldpc.com/product/windows-nt-31/31", "Advanced Server": "#" }
-                }
-            },
-            "Windows NT 3.5 (Daytona)": {
-                hasEditions: true,
-                builds: {
-                    "Build 612": { "Workstation": "#", "Server": "#" },
-                    "Build 683 (Beta 2)": { "Workstation": "#", "Server": "#" },
-                    "Build 807 (RTM)": { "Workstation": "#", "Server": "#" }
-                }
-            },
-            "Windows NT 3.51": {
-                hasEditions: true,
-                builds: {
-                    "Build 854": { "Workstation": "#", "Server": "#" },
-                    "Build 944": { "Workstation": "#", "Server": "#" },
-                    "Build 1057 (RTM)": { "Workstation": "#", "Server": "#" }
-                }
-            },
-            "Windows NT 4.0 (Cairo/Shell Update)": {
-                hasEditions: true,
-                builds: {
-                    "Build 1130": { "Workstation": "#", "Server": "#" },
-                    "Build 1171": { "Workstation": "#", "Server": "#" },
-                    "Build 1227": { "Workstation": "#", "Server": "#" },
-                    "Build 1314": { "Workstation": "#", "Server": "#" },
-                    "Build 1381 (RTM)": { "Workstation": "#", "Server": "#" }
+            "Windows 10": {
+                updates: {
+                    "Version 1507": {
+                        "Build 10240": {
+                            "Home": { "x86": "LINK", "x64": "LINK" },
+                            "Pro": { "x86": "LINK", "x64": "LINK" }
+                        }
+                    }
                 }
             }
         };
 
-        // ==========================================
-        // THE SMART ENGINE LOGIC
-        // ==========================================
+        const vSel = document.getElementById('version-select');
+        const uSel = document.getElementById('update-select');
+        const bSel = document.getElementById('build-select');
+        const eSel = document.getElementById('edition-select');
+        const aSel = document.getElementById('arch-select');
+        const uStep = document.getElementById('update-step');
+        const eStep = document.getElementById('edition-step');
+        const aStep = document.getElementById('arch-step');
+        const dlSec = document.getElementById('download-section');
+        const dlBtn = document.getElementById('download-btn');
+        const msgOS = document.getElementById('custom-message');
+        const msgBuild = document.getElementById('build-message');
 
-        const versionSelect = document.getElementById('version-select');
-        const buildSelect = document.getElementById('build-select');
-        const editionSelect = document.getElementById('edition-select');
-        const archSelect = document.getElementById('arch-select');
-        
-        const editionStep = document.getElementById('edition-step');
-        const archStep = document.getElementById('arch-step');
-        const downloadSection = document.getElementById('download-section');
-        
-        const downloadBtn = document.getElementById('download-btn');
-        const customMessage = document.getElementById('custom-message');
-        const buildMessage = document.getElementById('build-message');
+        for (let os in windowsDatabase) vSel.add(new Option(os, os));
 
-        // 1. Load Versions
-        for (let os in windowsDatabase) {
-            let option = document.createElement('option');
-            option.value = os;
-            option.textContent = os;
-            versionSelect.appendChild(option);
+        /**
+         * STEP 1: VERSION SELECTION
+         * Logic: Clears UI and displays persistent OS-level message.
+         */
+        vSel.onchange = function() {
+            let os = windowsDatabase[this.value];
+            resetUI('version');
+            if (os.message) { 
+                msgOS.innerHTML = os.message; 
+                msgOS.classList.remove('hidden'); 
+            } else { 
+                msgOS.classList.add('hidden'); 
+            }
+            let updateKeys = Object.keys(os.updates);
+            if (updateKeys.length > 1 || updateKeys[0] !== "Main Releases") {
+                uStep.classList.remove('hidden');
+                uSel.innerHTML = '<option value="" disabled selected>-- Select Series --</option>';
+                updateKeys.forEach(k => uSel.add(new Option(k, k)));
+            } else {
+                loadBuilds(os.updates[updateKeys[0]]);
+            }
+        };
+
+        /**
+         * STEP 2: SERIES/UPDATE SELECTION
+         */
+        uSel.onchange = function() { loadBuilds(windowsDatabase[vSel.value].updates[this.value]); };
+
+        /**
+         * HELPER: LOAD BUILDS
+         */
+        function loadBuilds(buildData) {
+            resetUI('update');
+            bSel.innerHTML = '<option value="" disabled selected>-- Select Build --</option>';
+            for (let b in buildData) bSel.add(new Option(b, b));
+            bSel.disabled = false;
         }
 
-        // 2. Handle Version Change
-        versionSelect.addEventListener('change', function() {
-            let selectedOS = this.value;
-            let osData = windowsDatabase[selectedOS];
-
-            // Reset and hide everything downstream
-            buildSelect.innerHTML = '<option value="" disabled selected>-- Select a Build --</option>';
-            buildSelect.disabled = false;
-            
-            editionStep.classList.add('hidden');
-            archStep.classList.add('hidden');
-            downloadSection.classList.add('hidden');
-
-            if (osData.message) {
-                customMessage.innerHTML = osData.message;
-                customMessage.classList.remove('hidden');
+        /**
+         * STEP 3: BUILD SELECTION
+         */
+        bSel.onchange = function() {
+            let os = windowsDatabase[vSel.value];
+            let updateKey = uStep.classList.contains('hidden') ? Object.keys(os.updates)[0] : uSel.value;
+            let buildData = os.updates[updateKey][this.value];
+            if (os.buildMessages && os.buildMessages[this.value]) {
+                msgBuild.innerHTML = os.buildMessages[this.value];
+                msgBuild.classList.remove('hidden');
             } else {
-                customMessage.classList.add('hidden');
+                msgBuild.classList.add('hidden');
             }
+            processStep(buildData, eStep, eSel, aStep);
+        };
 
-            buildMessage.classList.add('hidden');
+        /**
+         * STEP 4: EDITION SELECTION
+         */
+        eSel.onchange = function() {
+            let os = windowsDatabase[vSel.value];
+            let updateKey = uStep.classList.contains('hidden') ? Object.keys(os.updates)[0] : uSel.value;
+            processStep(os.updates[updateKey][bSel.value][this.value], aStep, aSel, null);
+        };
 
-            // Load Builds
-            for (let buildName in osData.builds) {
-                let option = document.createElement('option');
-                option.value = buildName;
-                option.textContent = buildName;
-                buildSelect.appendChild(option);
-            }
-        });
+        /**
+         * STEP 5: ARCHITECTURE SELECTION
+         */
+        aSel.onchange = function() {
+            let os = windowsDatabase[vSel.value];
+            let updateKey = uStep.classList.contains('hidden') ? Object.keys(os.updates)[0] : uSel.value;
+            let link = os.updates[updateKey][bSel.value][eSel.value][this.value];
+            showDownload(link);
+        };
 
-        // 3. Handle Build Change
-        buildSelect.addEventListener('change', function() {
-            let selectedOS = versionSelect.value;
-            let selectedBuild = this.value;
-            let osData = windowsDatabase[selectedOS];
-            let buildData = osData.builds[selectedBuild];
-
-            // Hide downstream stuff
-            archStep.classList.add('hidden');
-            downloadSection.classList.add('hidden');
-
-            if (osData.buildMessages && osData.buildMessages[selectedBuild]) {
-                buildMessage.innerHTML = osData.buildMessages[selectedBuild];
-                buildMessage.classList.remove('hidden');
+        /**
+         * CORE ENGINE: PROCESS STEP
+         */
+        function processStep(data, container, selector, hideOther) {
+            if (hideOther) hideOther.classList.add('hidden');
+            dlSec.classList.add('hidden');
+            if (typeof data === 'string') {
+                container.classList.add('hidden');
+                showDownload(data);
             } else {
-                buildMessage.classList.add('hidden');
+                container.classList.remove('hidden');
+                selector.innerHTML = '<option value="" disabled selected>-- Select Option --</option>';
+                for (let k in data) selector.add(new Option(k, k));
             }
+        }
 
-            // SMART LOGIC: Is it a string (link) or an object (editions)?
-            if (typeof buildData === 'string') {
-                editionStep.classList.add('hidden');
-                showDownloadButton(buildData);
-            } else {
-                editionStep.classList.remove('hidden');
-                editionSelect.innerHTML = '<option value="" disabled selected>-- Select an Edition --</option>';
-                for (let editionName in buildData) {
-                    let option = document.createElement('option');
-                    option.value = editionName;
-                    option.textContent = editionName;
-                    editionSelect.appendChild(option);
-                }
-            }
-        });
+        /**
+         * RESET UI
+         */
+        function resetUI(lvl) {
+            if (lvl === 'version') uStep.classList.add('hidden');
+            bSel.disabled = true;
+            bSel.innerHTML = '<option value="" disabled selected>-- Select Build --</option>';
+            eStep.classList.add('hidden');
+            aStep.classList.add('hidden');
+            dlSec.classList.add('hidden');
+            msgBuild.classList.add('hidden'); 
+        }
 
-        // 4. Handle Edition Change
-        editionSelect.addEventListener('change', function() {
-            let selectedOS = versionSelect.value;
-            let selectedBuild = buildSelect.value;
-            let selectedEdition = this.value;
-            let editionData = windowsDatabase[selectedOS].builds[selectedBuild][selectedEdition];
-
-            // Hide download initially
-            downloadSection.classList.add('hidden');
-
-            // SMART LOGIC: Is it a string (link) or an object (architectures)?
-            if (typeof editionData === 'string') {
-                archStep.classList.add('hidden');
-                showDownloadButton(editionData);
-            } else {
-                archStep.classList.remove('hidden');
-                archSelect.innerHTML = '<option value="" disabled selected>-- Select an Architecture --</option>';
-                for (let archName in editionData) {
-                    let option = document.createElement('option');
-                    option.value = archName;
-                    option.textContent = archName;
-                    archSelect.appendChild(option);
-                }
-            }
-        });
-
-        // 5. Handle Architecture Change
-        archSelect.addEventListener('change', function() {
-            let selectedOS = versionSelect.value;
-            let selectedBuild = buildSelect.value;
-            let selectedEdition = editionSelect.value;
-            let selectedArch = this.value;
-            
-            let finalLink = windowsDatabase[selectedOS].builds[selectedBuild][selectedEdition][selectedArch];
-            showDownloadButton(finalLink);
-        });
-
-        // Helper function
-        function showDownloadButton(url) {
-            downloadBtn.href = url;
-            downloadSection.classList.remove('hidden');
+        /**
+         * FINAL DOWNLOAD BUTTON
+         */
+        function showDownload(url) { 
+            dlBtn.href = url; 
+            dlSec.classList.remove('hidden'); 
         }
     </script>
 </body>
