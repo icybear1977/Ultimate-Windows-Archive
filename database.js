@@ -530,11 +530,136 @@
                 },
                 "1627": "https://mega.nz/#!qlgGkCRb!Qy7QDneCxMsql39cOZ-hm0aG5Wby4ET47CZHyfQPgac",
                 "1631": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1631.1_x86fre_server-standardserver_retail_en-us-WNNT5S.iso",
-                "1671": {
+                "1671 (Beta 1)": {
                     "Workstation": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1671.1_axpfre-x86fre-nec98fre_client-workstation_retail_ja-jp-NTWKS50AJ.iso",
                     "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1631.1_x86fre_server-standardserver_retail_en-us-WNNT5S.iso"
+                },
+                "1691": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1691.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                "1701": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1701.1_x86fre_server-standardserver_retail_en-us-1701SRV.iso",
+                "1717": "https://archive.org/download/NT5_5.00.1717.1_WKS/PWA17WXX.rar",
+                "1723": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1723.1_x86fre_client-workstation_retail_en-us-1723.iso",
+                "1729": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1729.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                "1738": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1738.1_x86fre_client-workstation_retail_en-us-TEMP.iso",
+                "1743": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1743.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                "1745": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1745.1_x86fre_server-standardserver_retail_en-us-NTSRV50A.iso",
+                "1762": "https://archive.org/download/5.00.1762.1-x-86fre-client-workstation-retail-en-us-ntfixed/5.00.1762.1_x86fre_client-workstation_retail_en-us-NTFIXED.iso",
+                "1773 (Interim Developer Release)": {
+                    "Workstation": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1773.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                    "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1773.1_x86fre_server-standardserver_retail_en-us-NT5_1773S.iso"
+                },
+                "1796": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1796.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                "1814": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1814.1_x86fre_client-standardserver_retail_en-us-NTSRV50A.iso",
+                "1816": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1816.1_x86fre_client-workstation-retail-en-us-NTWKS50A.iso",
+                "1835": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1835.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                "1848": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1848.1_x86fre_server-standardserver_retail_en-us-NTSRV50A.iso",
+                "1855": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1855.1_axpfre_server-advancedserver_retail_en-us-NTSE50A.iso",
+                "1859": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1859.1_x86fre_client-workstation_retail_en-us-WIN2K_1859W.iso",
+                "1877 (Beta 2)": {
+                    "Workstation": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1877.1_axpchk_client-workstation_retail_en-us-NTWKS50A.iso",
+                    "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1877.1_axpfre_server-standardserver_retail_en-us-NTSRV50A.iso"
+                },
+                "1888": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1888.1_x86fre_server-advancedserver_retail_en-us-WINNT_1888.iso",
+                "1902": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1902.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                "1906": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1906.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                "1911": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1911.1_x86fre_server-standardserver_retail_en-us-NT5_1911.iso"
+            },
+            "Windows 2000 Beta": {
+               "1946 (Beta 3 RC0)": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1946.1_x86fre_client-professional_retail_en-us-W2KPROI_USA%20%28WWPC%20copy%29.iso",
+               "1964": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1964.1_x86fre_server-standardserver_retail_en-us-W2KSRVI_USA.iso",
+               "1965": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1965.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               "1969": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1969.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               "1983": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1983.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               "1989": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1989.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               "1993": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1993.1_x86fre_server-standardserver_retail_en-us-WIN2KS_A.iso",
+               "1994": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1994.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               "1999": {
+                "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1999.1_x86chk_client-professional_retail_en-us-W2PROI_USA.iso",
+                "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1999.1_x86fre_server-standardserver_retail_en-us-W2SRVI_USA.iso",
+                "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1999.1_x86fre_server-advancedserver_retail_en-us-W2ASVI_USA.iso",
+                "Datacenter Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1999.1_x86fre_server-advancedserver_retail_en-us-W2ASVI_USA.iso"
+               },
+               "2000.1": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2000.1_x86fre_client-professional_retail_en-us-W2PROI_USA.iso",
+               "2000.3 (Beta 3 RC1)": {
+                "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2000.3_axpfre_client-professional_retail_en-us-W2PROA_USA.iso",
+                "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2000.3_axpfre_server-standardserver_retail_en-us-W2SRVA_USA.iso",
+                "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2000.3_axpfre_server-advancedserver_retail_en-us-W2ASVA_USA.iso",
+               },
+               "2020": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2020.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               "2031 (Beta 3)": {
+                "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2031.1_axpchk_client-professional_retail_en-us-W2KPRCA_USA.iso",
+                "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2031.1_axpfre_server-standard_retail_en-us%20%28alt%29.zip",
+                "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2031.1_axpfre_server-advancedserver_retail_en-us-W2KASVA_USA.iso"
+               },
+               "2068": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2068.1_x86fre_server-standardserver_retail_en-us-W2KSRVI_USA.iso",
+               "2072 (RC1)": {
+                "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2072.1_x86chk_client-professional_retail_en-us-W2KPRCI_USA.iso",
+                "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2072.1_axpfre_server-standardserver_retail_en-us-W2KSRVA_USA.iso",
+                "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2072.1_x86fre_server-advancedserver_retail_en-us-W2KASVI_USA.iso"
+               },
+               "2091": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2091.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               "2092": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2092.1_x86chk_client-professional_retail_en-us-W2KPRCI_USA.iso",
+               "2124": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2124.1_x86fre_server-advancedserver_retail_en-us-W2AIS_EN.iso",
+               "2128 (RC2)": {
+                "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2128.1_x86chk_client-professional_retail_en-us-W2PIX_EN.iso",
+                "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2128.1_x86fre_server-standardserver_retail_en-us-W2SIS_EN.iso",
+                "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2128.1_x86fre_server-advancedserver_retail_en-us-W2AIS_EN.iso"
+               },
+               "2151": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2151.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               "2167": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2167.1_x86fre_client-professional_retail_en-us-W2PIS_EN.iso",
+               "2183 (RC3)": {
+                "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2183.1_x86fre_client-professional_retail_en-us-W2PIS_EN.iso",
+                "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2183.1_x86fre_server-standardserver_retail_en-us-W2SIS_EN.iso",
+                "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2183.1_x86fre_server-advancedserver_retail_en-us-W2AIS_EN.iso",
+                "Datacenter Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2183.1_x86fre_server-datacenterserver_retail_en-us-W2DTC_EN.iso"
+               },
+               "2190": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2190.1_x86fre_server-advancedserver_retail_en-us-W2AIS_EN.iso"
+            },
+            "RTM": {
+                "2195 (RTM}": {
+                    "Professional": "https://archive.org/download/win-2000-rtm-en/Win2000RTM_EN.iso",
+                    "Server": "https://archive.org/download/Win2000ServerRTMCHS/5.00.2195.1_x86fre_Server_zh-cn-W2SFPP_CN.iso",
+                    "Advanced Server": "https://archive.org/download/windows-2000_202010/Windows%202000%20Advanced%20Server.iso",
+                    "Datacenter Server": "https://archive.org/download/windows-2000_202010/Windows%202000%20Datacenter%20Server.iso"
                 }
+            },
+            "Service Packs": {
+             "1600": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.1600_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             "1610": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.1610_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             "1620 (SP1)": {
+                "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.1620_x86fre_client-professional_select_en-us-SP1PSEL_EN.iso",
+                "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.1620_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+                "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.1620_x86fre_server-advancedserver_select_en-us-SP1ASEL_EN.iso"
+             },
+             "2793": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.2793_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             "2951 (SP2)": {
+                "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.2951_x86fre_client-professional_oem_en-us-SP2POEM_EN.iso",
+                "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.2951_x86fre_client-server-en-us%20%28service%20pack%29.zip"
+             },
+             "4448": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.4448_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             "5438 (SP3)": {
+                "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.5438_x86fre_client-professional_oem_de-de-YRMPOEM_DE.iso",
+                "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.5438_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             },
+             "6623": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6623_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             "6632": {
+                "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6632_x86fre_client-professional_retail_en-us-ZB1PFRE_EN.iso",
+                "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6632_x86fre_client-server-de-de%20%28service%20pack%20CD%29.iso"
+             },
+             "6697": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6697_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             "6704": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6704_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             "6706": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6706_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             "6712": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6712_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             "6715": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6715_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             "6717 RC 4.80": "https://archive.org/download/Win2000ProSP4Beta2195.6717_RC4.80/Windows%202000%20Professional%20SP4%20Beta%20%28Build%202195.6717%29%20%28RC%204.80%29.iso",
+             "6717 (SP4)": {
+                "Professional": "https://archive.org/download/windows_2000_sp4_pro_en-de-ru-tr_x86/en_windows_2000_sp4_pro_5.0.2195.6717_MSDN_ZRMPFPP_EN.iso",
+                "Server": "https://archive.org/download/WinSrvr200SP4/Windows%20Server%202000%20Service%20Pack%204.ISO",
+                "Advanced Server": "https://archive.org/download/windows-2000-advanced-server-sp-4/Windows%202000%20Advanced%20Server%20SP4.ISO",
+                "Datacenter Server": "https://archive.org/download/Windows2000DatacenterServerSP4/5.00.2195.6717_x86fre_DTCServer_en-us.iso"
+             },
+             "7045 (Update Rollup 1)": "https://archive.org/download/2005-12-3014.1-updaterollup1forwindows2000servicepack4v2multigreek/Disc01.iso"
             }
+
         }
     }
 }
