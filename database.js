@@ -111,7 +111,7 @@
                     "90c": "https://archive.org/download/chicago-collection/4.00.90c/Chicago.ver.4.00.090c.English.rar",
                     " 99": "https://archive.org/download/chicago-collection/4.00.99/4.0.99.iso",
                     " 116": "https://archive.org/download/chicago-collection/4.00.116/Chicago.ver.4.00.116.English.iso",
-                    " +121": "https://archive.org/download/microsoftwindowschicagobuild58s-950collection136files/4.00.121_x86fre_client_en-us-%283.5%27%27-1.44MB%29.zip",
+                    " 121": "https://archive.org/download/microsoftwindowschicagobuild58s-950collection136files/4.00.121_x86fre_client_en-us-%283.5%27%27-1.44MB%29.zip",
                     " 122": "https://archive.org/download/chicago-collection/4.00.122/alternatives/Microsoft%20Windows%2095%20%28%27%27Chicago%27%27%204.00.122%29%20%28beta%29%20%28alt%29.rar",
                     ' 180': "https://archive.org/download/chicago-collection/4.00.180/4.00.180_x86fre_client_en-us-CHICO.iso",
                 },
@@ -208,58 +208,58 @@
             "Windows 98": {
                 message: "Download Plus! 98 from here.<br><br><a href='https://archive.org/download/PLUS98_201905/PLUS98.ISO' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download Plus! 98</a>",
                 updates: { "Memphis (Beta)": {
-                 "1351": "https://archive.org/download/win98buildscollection/4.10.1351_x86fre_client_en-us-MEMPHIS1351.iso", 
-                 "1353": "https://archive.org/download/win98buildscollection/4.10.1353_x86fre_client_en-us-MEMPHIS1353.iso",  
-                 "1387": "https://archive.org/download/win98buildscollection/4.10.1387_x86fre_client_en-us.iso",
-                 "1400": "https://archive.org/download/win98buildscollection/4.10.1400_x86fre_client_en-us-MEMPHIS.iso", 
-                 "1410": "https://archive.org/download/win98buildscollection/4.10.1410_x86fre_client_en-us-MEM_1410.iso",  
-                 "1411": "https://archive.org/download/win98buildscollection/4.10.1411_x86fre_client_en-us-MEMPHIS_1411.iso",
-                 "1415": "https://archive.org/download/win98buildscollection/4.10.1415_x86fre_client_en-us-WIN98BETA2.iso", 
-                 "1423": "https://archive.org/download/win98buildscollection/4.10.1423_x86fre_client_en-us-MEMPHIS.iso",  
-                 "1434": "https://archive.org/download/win98buildscollection/4.10.1434_x86fre_client_en-us-20140826_2130.iso",
-                 "1488": "https://archive.org/download/win98buildscollection/4.10.1488_x86fre_client_en-us-010328_0145.iso", 
-                 "1500": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1500_x86fre_client_en-us-ISO.iso",  
-                 "1511": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1511_x86fre_client_en-us-MEMPHIS_1511.iso",
-                 "1513": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1513_x86fre_client_en-us-MEM1513.iso", 
-                 "1518": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1518_x86fre_client_en-us-MEMPHIS_1518.iso",  
-                 "1525": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1525_x86fre_client_en-us-MEMPHIS_1525.iso",
+                 " 1351": "https://archive.org/download/win98buildscollection/4.10.1351_x86fre_client_en-us-MEMPHIS1351.iso", 
+                 " 1353": "https://archive.org/download/win98buildscollection/4.10.1353_x86fre_client_en-us-MEMPHIS1353.iso",  
+                 " 1387": "https://archive.org/download/win98buildscollection/4.10.1387_x86fre_client_en-us.iso",
+                 " 1400": "https://archive.org/download/win98buildscollection/4.10.1400_x86fre_client_en-us-MEMPHIS.iso", 
+                 " 1410": "https://archive.org/download/win98buildscollection/4.10.1410_x86fre_client_en-us-MEM_1410.iso",  
+                 " 1411": "https://archive.org/download/win98buildscollection/4.10.1411_x86fre_client_en-us-MEMPHIS_1411.iso",
+                 " 1415": "https://archive.org/download/win98buildscollection/4.10.1415_x86fre_client_en-us-WIN98BETA2.iso", 
+                 " 1423": "https://archive.org/download/win98buildscollection/4.10.1423_x86fre_client_en-us-MEMPHIS.iso",  
+                 " 1434": "https://archive.org/download/win98buildscollection/4.10.1434_x86fre_client_en-us-20140826_2130.iso",
+                 " 1488": "https://archive.org/download/win98buildscollection/4.10.1488_x86fre_client_en-us-010328_0145.iso", 
+                 " 1500": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1500_x86fre_client_en-us-ISO.iso",  
+                 " 1511": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1511_x86fre_client_en-us-MEMPHIS_1511.iso",
+                 " 1513": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1513_x86fre_client_en-us-MEM1513.iso", 
+                 " 1518": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1518_x86fre_client_en-us-MEMPHIS_1518.iso",  
+                 " 1525": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1525_x86fre_client_en-us-MEMPHIS_1525.iso",
                  "1525 (Beta 1)": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1525_beta_1_x86fre_client_en-us-MEM_BETA1.iso", 
-                 "1526": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1526_x86fre_client_en-us-MEMPHIS1526.ISO",  
-                 "1532": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1532_x86fre_client_en-us.iso",
-                 "1538": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1538_x86fre_client_en-us-MEM_1538.iso", },
+                 " 1526": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1526_x86fre_client_en-us-MEMPHIS1526.ISO",  
+                 " 1532": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1532_x86fre_client_en-us.iso",
+                 " 1538": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1538_x86fre_client_en-us-MEM_1538.iso", },
                 "98 Beta Releases": {
-                 "1543": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1543_x86fre_client_en-us.iso",  
-                 "1544": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1544_x86fre_client_en-us-MEMPHIS1544.iso",
+                 " 1543": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1543_x86fre_client_en-us.iso",  
+                 " 1544": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1544_x86fre_client_en-us-MEMPHIS1544.iso",
                  "1546 (Beta 2)": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1546_beta_2_x86fre_client_en-us-WIN98_BETA2.iso", 
-                 "1559": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1559_x86fre_client_en-us-MEMPHIS1559.iso",  
-                 "1569": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1569_x86fre_client_en-us-MEMPHIS.iso",
-                 "1572": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1572_x86fre_client_en-us-%5BIncomplete%5D.iso", 
-                 "1577": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1577_x86fre_client_en-us-MEMPHIS.iso",  
+                 " 1559": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1559_x86fre_client_en-us-MEMPHIS1559.iso",  
+                 " 1569": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1569_x86fre_client_en-us-MEMPHIS.iso",
+                 " 1572": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1572_x86fre_client_en-us-%5BIncomplete%5D.iso", 
+                 " 1577": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1577_x86fre_client_en-us-MEMPHIS.iso",  
                  "1581.1": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1581.1_x86fre_client_en-us-W981581_VAP.iso",
-                 "1588": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1588_x86fre_client_en-us.iso", 
-                 "1593": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1593_x86fre_client_en-us-MEMPHIS.iso",  
-                 "1602": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1602_x86fre_client_en-us-Win98_1602.iso",
-                 "1611": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1611_x86fre_client_en-us.iso", 
-                 "1614": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1614_x86fre_client_en-us-WIN98_1614.iso",  
-                 "1619": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1619_x86fre_client_en-us.iso",
-                 "1624": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1624_x86fre_client_en-us-WIN98BETA3.iso", 
-                 "1633": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1633_x86fre_client_en-us-Win98_1633.iso",  
-                 "1650": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1650.3_x86fre_client_en-us-MEMPHIS.iso",
+                 " 1588": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1588_x86fre_client_en-us.iso", 
+                 " 1593": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1593_x86fre_client_en-us-MEMPHIS.iso",  
+                 " 1602": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1602_x86fre_client_en-us-Win98_1602.iso",
+                 " 1611": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1611_x86fre_client_en-us.iso", 
+                 " 1614": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1614_x86fre_client_en-us-WIN98_1614.iso",  
+                 " 1619": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1619_x86fre_client_en-us.iso",
+                 " 1624": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1624_x86fre_client_en-us-WIN98BETA3.iso", 
+                 " 1633": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1633_x86fre_client_en-us-Win98_1633.iso",  
+                 " 1650": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1650.3_x86fre_client_en-us-MEMPHIS.iso",
                  "1650.3": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1650.3_x86fre_client_en-us-MEMPHIS.iso", 
                  "1650.8 (Beta 3)": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1650.8_x86fre_client_en-us-Win98%20Beta3.iso" },
                 "Release Candidates": {  
-                 "1658": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1658_x86fre_client_en-us-MEMPHIS_1658.iso",
-                 "1666": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1666_x86fre_client_en-us-MEMPHIS.iso", 
-                 "1671": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1671_x86fre_client_en-us-MEMPHIS.iso",  
-                 "1676": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1676_x86fre_client_zh-chs-WIN98_1676_BETA3_CHS.iso",
-                 "1677": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1677_x86fre_client_en-us-MEMPHIS.iso", 
-                 "1681": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1681_x86fre_client_en-us-MEMPHIS_1681.iso",  
-                 "1687": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1687_x86fre_client_en-us-MEMPHIS.iso",
+                 " 1658": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1658_x86fre_client_en-us-MEMPHIS_1658.iso",
+                 " 1666": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1666_x86fre_client_en-us-MEMPHIS.iso", 
+                 " 1671": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1671_x86fre_client_en-us-MEMPHIS.iso",  
+                 " 1676": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1676_x86fre_client_zh-chs-WIN98_1676_BETA3_CHS.iso",
+                 " 1677": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1677_x86fre_client_en-us-MEMPHIS.iso", 
+                 " 1681": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1681_x86fre_client_en-us-MEMPHIS_1681.iso",  
+                 " 1687": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1687_x86fre_client_en-us-MEMPHIS.iso",
                  "1691 (RC0)": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1691_x86fre_client_en-us-Win98%20RC0.iso", 
-                 "1693": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1693_x86fre_client_en-us-WIN98.iso",  
-                 "1702": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1702_x86fre_client_en-us-MEMPHIS_1702.iso",
-                 "1708": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1708_x86fre_client_en-us.iso", 
-                 "1713": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1713_x86fre_client_en-us-WIN98.iso",  
+                 " 1693": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1693_x86fre_client_en-us-WIN98.iso",  
+                 " 1702": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1702_x86fre_client_en-us-MEMPHIS_1702.iso",
+                 " 1708": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1708_x86fre_client_en-us.iso", 
+                 " 1713": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1713_x86fre_client_en-us-WIN98.iso",  
                  "1720": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1720_x86fre_client_en-us-WIN98_1720.iso",
                  "1721.3 (RC1)": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1721.3_x86fre_client_en-us-Win98%20RC1.iso", 
                  "1723.4 (RC2)": "https://archive.org/download/microsoftwindowsmemphisbuild1351-1998collection73files/4.10.1723_rc2_x86fre_client_en-us-Win98%20RC2.iso",  
@@ -273,11 +273,11 @@
                 },
             "Second Edition": {
               "2106 (Beta 1)": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2106_x86fre_client_en-us-W98%20OSR%20Beta1.iso",
-              "2120": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2120_x86fre_client_en-us-W98%20OSR%20Beta1.iso",
-              "2124": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2124_x86fre_client_en-us-WIN98OSR1.iso",
-              "2126": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2126.0_x86fre_client_en-us-WIN98OSR1.iso",
-              "2131": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2131.0_x86fre_client_en-us-MEMPHIS_2131.iso",
-              "2136": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2136.0_x86fre_client_en-us-W98SR1_B2.iso",
+              " 2120": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2120_x86fre_client_en-us-W98%20OSR%20Beta1.iso",
+              " 2124": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2124_x86fre_client_en-us-WIN98OSR1.iso",
+              " 2126": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2126.0_x86fre_client_en-us-WIN98OSR1.iso",
+              " 2131": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2131.0_x86fre_client_en-us-MEMPHIS_2131.iso",
+              " 2136": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2136.0_x86fre_client_en-us-W98SR1_B2.iso",
               "2150A": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2150a_x86fre_client_en-us-WIN98.iso",
               "2150.4 (Beta 2)": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2150.4_x86fre_client_en-us-W98SR1_B2.iso",
               "2162A": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2162a_x86fre_client_en-us-WIN98SE.iso",
@@ -296,34 +296,34 @@
                     "2332 (DR1)": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2332.2_x86fre_client_en-us-Millennium.iso",
                     "2348 (DR2)": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2348_x86fre_client_en-us-MILLENNIUM.iso",
                     "2358 (DR3)": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2358_x86fre_client_en-us-MILLENNIUM_2358.iso",
-                    "2368": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2368.0_x86fre_client_en-us-WINMIL.iso",
+                    " 2368": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2368.0_x86fre_client_en-us-WINMIL.iso",
                     "2380.2 (Beta 1)": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2380.2_beta_x86fre_client_en-us-WinMil%20B1.iso",
-                    "2394": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2394.0_x86fre_client_en-us.iso",
-                    "2404": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2404_x86fre_client_en-us-MIL_2404_X86FRE.iso",
-                    "2416": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2416_x86fre_client_en-us-MIL_2416_X86FRE.iso",
+                    " 2394": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2394.0_x86fre_client_en-us.iso",
+                    " 2404": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2404_x86fre_client_en-us-MIL_2404_X86FRE.iso",
+                    " 2416": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2416_x86fre_client_en-us-MIL_2416_X86FRE.iso",
                     "2419 (Beta 2)": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2419_beta_2_x86fre_client_en-us-Mill%20Beta2.iso",
-                    "2429": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2429_x86fre_client_en-us-Mill%20Beta2.iso",
-                    "2443": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2443_x86fre_client_en-us-MILLENNIUM.iso",
-                    "2447": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2447_x86fre_client_en-us-MILLENNIUM.iso",
+                    " 2429": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2429_x86fre_client_en-us-Mill%20Beta2.iso",
+                    " 2443": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2443_x86fre_client_en-us-MILLENNIUM.iso",
+                    " 2447": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2447_x86fre_client_en-us-MILLENNIUM.iso",
                     "2452 (Beta 2 Refresh)": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2452.0_x86fre_client_en-us-Beta2%20Refresh.iso",
-                    "2460": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2460.0_x86fre_client_en-us-Millen%202460.iso",
-                    "2465": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2465.0_x86fre_client_en-us-Millen%202465.iso",
-                    "2470": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2470_x86fre_client_en-us-MIL2470.iso",
-                    "2476": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2476_x86fre_client_en-us-MILLENNIUM2476.iso",
-                    "2481": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2481_x86fre_client_en-us-MILLENNIUM.iso",
-                    "2487": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2487_x86fre_client_en-us-MILLENNIUM.iso",
-                    "2491": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2491_x86fre_client_en-us-MILLENNIUM2491.iso",
+                    " 2460": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2460.0_x86fre_client_en-us-Millen%202460.iso",
+                    " 2465": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2465.0_x86fre_client_en-us-Millen%202465.iso",
+                    " 2470": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2470_x86fre_client_en-us-MIL2470.iso",
+                    " 2476": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2476_x86fre_client_en-us-MILLENNIUM2476.iso",
+                    " 2481": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2481_x86fre_client_en-us-MILLENNIUM.iso",
+                    " 2487": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2487_x86fre_client_en-us-MILLENNIUM.iso",
+                    " 2491": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2491_x86fre_client_en-us-MILLENNIUM2491.iso",
                     "2499.3": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2499.3_x86fre_client_en-us-Millen%202499.3.iso",
                     "2499 (Beta 3)": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2499_beta_3_x86fre_client_en-us-WinMe%20Beta3.iso",
-                    "2509": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2509_x86fre_client_en-us-MILLENNIUM.iso",
-                    "2513": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2513_x86fre_client_en-us-MSWIN_MIL_2513.iso",
-                    "2516": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2516_x86fre_client_en-us-WINME2516.iso",
+                    " 2509": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2509_x86fre_client_en-us-MILLENNIUM.iso",
+                    " 2513": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2513_x86fre_client_en-us-MSWIN_MIL_2513.iso",
+                    " 2516": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2516_x86fre_client_en-us-WINME2516.iso",
                     "2525 (RC0)": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2525_x86fre_client_en-us-WINME_2525.iso",
                     "2525.6 (RC1)": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2525.6_x86fre_client_en-us-WinMe%202525.6.iso",
                     "2535 (RC2)": "https://archive.org/download/microsoftwindowsmillenniumbuild2332.2-3000collection35files/4.90.2535_x86fre_client_en-us-WinMe%202535.iso"
                 }, 
                 "RTM": {
-                    "3000 (RTM)": "https://archive.org/download/windows-me-iso/Windows%20Me%20%28101%20-%20Retail%20Full%29.iso"
+                    " 3000 (RTM)": "https://archive.org/download/windows-me-iso/Windows%20Me%20%28101%20-%20Retail%20Full%29.iso"
                 
                 
             }
@@ -333,10 +333,103 @@
              "Windows Neptune": {
                 updates: {
                     "Beta Release": {
-                        "5111": "https://archive.org/download/WinNeptune/Windows%20Neptune%20Build%205111.iso"
+                        " 5111": "https://archive.org/download/WinNeptune/Windows%20Neptune%20Build%205111.iso"
                     }
                     }
+            },
+"Windows XP": {
+        "buildMessages": "⚠️ This is an AXP64 version which will only work on emulators such as QEMU.",
+        "updates": {
+            "Whistler Betas": {
+                " 2202": "https://archive.org/download/windows-whistler-xp-build-list-professional/usa_2202__x86fre.pro_whistler.iso",
+                " 2210": "https://archive.org/download/axp64-2210-installable/axp64-2210-installable.iso",
+                " 2211": "https://archive.org/download/windows-whistler-xp-build-list-professional/usa_2211__x86fre.pro_whistler.iso",
+                " 2223": "https://archive.org/download/windows-whistler-xp-build-list-professional/usa_2223__x86fre.pro_whistler.iso",
+                " 2250": "https://archive.org/download/windows-whistler-xp-build-list-professional/usa_2250__x86fre.pro_whistler.iso",
+                " 2257": "https://archive.org/download/5.1.2257.1.idx-01.000810-2103-x-86fre-client-professional-retail-en-us-w-2-kpfre-en/5.1.2257.1.idx01.000810-2103_x86fre_client-home_retail_en-us-W2KCFRE_EN.iso",
+                " 2264": "https://archive.org/download/w-2-pro-en/W2PRO_EN.ISO",
+                " 2267 (Debug)": "https://archive.org/download/osx86microsoftwindowswhistlerprofessionaleditionbuild2267prebeta1checkeddebugen/Microsoft%20Windows%20Codename%20Whistler%20Professional%20Checked%20Build%202267.1%20%28idx01.000909-1503%29.iso",
+                " 2267": {
+                    "Personal": "https://archive.org/download/osx86microsoftwindowswhistlerprofessionaleditionbuild2267prebeta1checkeddebugen/Microsoft%20Windows%20Codename%20Whistler%20Personal%20Build%202267.1%20%28idx01.000910-1316%29.iso",
+                    "Professional": "https://archive.org/download/osx86microsoftwindowswhistlerprofessionaleditionbuild2267prebeta1checkeddebugen/Microsoft%20Windows%20Codename%20Whistler%20Professional%20Build%202267.1%20%28idx01.000910-1316%29.iso"
+                },
+                " 2276": "https://archive.org/download/windows-whistler-xp-build-list-professional/usa_2276.1__x86fre.pro_whistler.iso",
+                " 2287": "https://archive.org/download/windows-whistler-xp-build-list-professional/usa_2287__x86fre.pro_whistler.iso",
+                " 2296 (Beta 1)": {
+                    "Professional": "https://archive.org/download/ms-win-whistler-beta1/WB1PFRE_EN.ISO",
+                    "Personal": "https://archive.org/download/ms-win-whistler-beta1/WB1PLFRE_EN.ISO"
+                },
+                " 2410": "https://archive.org/download/windows-whistler-xp-build-list-professional/usa_2410__x86fre.pro_whistler.iso",
+                " 2416": {
+                    "Professional": "https://archive.org/download/ms-winxp-burnlab-2416/WB1PFRE_EN.ISO",
+                    "Personal": "https://archive.org/download/ms-winxp-burnlab-2416/WB1PLFRE_EN.ISO"
+                },
+                " 2419": "https://archive.org/download/windows-whistler-xp-build-list-professional/usa_2419__x86fre.pro_whistler.iso",
+                " 2428": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2428.1.idx01.010129-1827_x86fre_client-professional_retail_en-us-WB2PFRE_EN.iso",
+                " 2430": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2430.1.main.010130-1821_x86fre_client-professional_retail_en-us-WB2PFRE_EN.iso",
+                " 2433": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2433.1.main.010206-1822_x86fre_client-home_retail_en-us-PER_1OF12.iso",
+                " 2442": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2442.1.main.010217-1630_x86fre_client-home_retail_zh-cn-WB2PLFRE_CN.iso",
+                " 2446": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2446.1.main.010224-2228_x86fre_client-professional_retail_en-us-WB2PFRE_EN.iso",
+                " 2454": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2454.1.main.010306-1653_x86fre_client-professional_retail_en-us-WB2PFRE_EN.iso",
+                " 2457": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2457.0.main.010309-1904_x86fre_client-home_retail_en-us-WB2PLFRE_EN.iso",
+                " 2458": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2458.0.main.010310-1552_x86fre_client-professional_retail_en-us-WB2PFRE_EN.iso",
+                " 2459": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2459.0.main.010312-1811_x86fre_client-professional_retail_en-us-WB2PFRE_EN.iso",
+                " 2462 (Debug)": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2462.0.main.010315-1720_x86chk_client-professional_retail_en-us-WB2PCHK_EN.iso",
+                " 2462 (Beta 2)": {
+                    "Professional": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2462.0.main.010315-1739_x86fre_client-professional_retail_en-us-WB2PFRE_EN.iso",
+                    "Personal": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2462.0.main.010315-1739_x86fre_client-home_retail_en-us-WB2PLFRE_EN.iso"
                 }
+            },
+             "Windows XP Betas": {
+                " 2465": {
+                    "Professional": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2465.0.idx01.010412-2007_x86fre_client-professional_retail_en-us-WB2PFRE_EN.iso",
+                    "Home": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2465.0.idx01.010412-2007_x86fre_client-home_retail_en-us-WB2PLFRE_EN.iso"
+                },
+                " 2469": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2469.0.idx02.010508-1228_x86fre_client-professional_retail_en-us-WB2PFRE_EN.iso",
+                " 2474": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2474.0.main.010508-1907_x86fre_client-professional_retail_en-us-WB2PFRE_EN.iso",
+                " 2475": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2475.0.idx01.010514-2023_x86fre_client-professional_retail_en-us-WB2PFRE_EN.iso",
+                " 2481 (Internal)": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2481.0.main.010523-1905_x86fre_client-professional_retail_en-us-WB2PFRE_EN.iso",
+                " 2481": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2481.0.idx01.010524-1743_x86fre_client-professional_retail_en-us-WB2PFRE_EN.iso",
+                        " 2485": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2485.0.main.010531-2130_x86fre_client-professional_retail_en-us-WR1PFRE_EN.iso",
+                " 2486": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2486.0.main.010602-1927_x86fre_client-professional_retail_en-us-WR1PFRE_EN.iso",
+                " 2494": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2494.0.main.010613-1739_x86fre_client-professional_retail_en-us-XR1PFRE_EN.iso",
+                " 2495": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2495.0.main.010614-1724_x86fre_client-professional_retail_en-us-WR1PFRE_EN.iso",
+                " 2498": {
+                    "Professional": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2498.0.main.010618-1744_x86fre_client-professional_retail_en-us-XR1PFRE_EN.iso",
+                    "Home": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2498.0.main.010618-1744_x86fre_client-home_retail_en-us-XR1PFRE_EN.iso"
+                },
+                " 2499": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2499.0.main.010619-1834_x86fre_client-professional_retail_en-us-XR1PFRE_EN.iso",
+                " 2502": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2502.0.main.010622-1750_x86fre_client-professional_retail_en-us-XR1PFRE_EN.iso",
+                " 2504": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2504.0.main.010625-1923_x86fre_client-professional_retail_en-us-XR1PFRE_EN.iso",
+                " 2505 (RC1)": {
+                    "Professional": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2505.0.main.010626-1514_x86fre_client-professional_retail_en-us-XR1PFRE_EN.iso",
+                    "Home": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2505.0.main.010626-1514_x86fre_client-home_retail_en-us-XR1HFRE_EN.iso",                " 2509": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2509.0.main.010702-1146_x86fre_client-professional_retail_en-us-XR1PFRE_EN.iso",
+                " 2517": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2517.0.main.010713-1717_x86fre_client-professional_retail_en-us-XR1PFRE_EN.iso",
+                " 2520": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2520.0.main.010717-1624_x86fre_client-professional_retail_en-us-XR2PFRE_EN.iso",
+                " 2525": {
+                    "Professional": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2525.0.xpclient.010723-1719_x86fre_client-professional_retail_en-us-XR2PFRE_EN.iso",
+                    "Home": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2525.0.xpclient.010723-1719_x86fre_client-home_retail_en-us-XR2HFRE_EN.iso"
+                },
+                " 2526 (RC2)": {
+                    "Professional": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2526.0.xpclient.010724-1758_x86fre_client-professional_retail_en-us-XR2PFRE_EN.iso",
+                    "Home": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2526.0.xpclient.010724-1758_x86fre_client-home_retail_en-us-XR2HFRE_EN.iso"
+                },
+                " 2531": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2531.0.xpclient.010730-1640_x86fre_client-professional_retail_en-us-XR2PFRE_EN.iso",
+                " 2532": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2532.0.xpclient.010731-1658_x86fre_client-professional_retail_en-us-XR2PFRE_EN.iso",
+                " 2535": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2535.0.xpclient.010803-1621_x86fre_client-professional_retail_en-us-XR2PFRE_EN.iso",
+                " 2542": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2542.0.xpclient.010811-1534_x86fre_client-professional_retail_en-us-WXPFRE_EN.iso"
+            }
+             },
+            "RTM": {
+                " 2600": {
+                    "Professional": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.0.xpclient.010817-1148_x86chk_client-professional_retail_en-us-WXPFPP_EN.iso",
+                    "Home": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.0.xpclient.010817-1148_x86fre_client-home_retail_en-us-WXHFPP_EN.iso"
+                }
+            }
+        
+        }
+}
+
 
             },
             "Server": {
@@ -345,18 +438,18 @@
                     "1.196": "https://archive.org/download/windows-nt-3.1-pdk-1.196-sept.-1991/Windows%20NT%203.1%20PDK%20-%201.196%20-%20Sept.%201991.zip",
                     "October 1991": "https://archive.org/download/windows-nt-3.1-october-1991-build/k-nt1091.iso",
                     "1.239": "https://archive.org/download/windows-nt-3.1-december-1991-pre-release-vmdk/Windows%20NT%203.1%20%28December%201991%20pre-release%29.zip",
-                    "297": "https://archive.org/compress/windows-nt-3.1-build-297_202108/formats=ISO%20IMAGE&file=/windows-nt-3.1-build-297_202108.zip",
-                    "311": "https://archive.org/download/3.1.311.1-x-86fre-client-en-us/3.1.311.1_x86fre_client-en-us.iso",
-                    "340": {
+                    " 297": "https://archive.org/compress/windows-nt-3.1-build-297_202108/formats=ISO%20IMAGE&file=/windows-nt-3.1-build-297_202108.zip",
+                    " 311": "https://archive.org/download/3.1.311.1-x-86fre-client-en-us/3.1.311.1_x86fre_client-en-us.iso",
+                    " 340": {
                         "Workstation": "https://archive.org/download/windows-nt-3.1-build-340/Windows%20NT%203.1%20build%20340%20Server.rar",
                         "LAN Manager": "https://archive.org/download/windows-nt-server-3.1-build-340-pre-release/Windows%20NT%20Server%203.1%20%28build%20340%20pre-release%29.zip"
                     },
-                    "347": "https://archive.org/download/winnt31-347-orig/NT111892%20%281%29.rar",
-                    "404": {
+                    " 347": "https://archive.org/download/winnt31-347-orig/NT111892%20%281%29.rar",
+                    " 404": {
                         "Workstation": "https://winworldpc.com/download/42c390c3-b863-18c3-9a11-c3a4e284a2ef/from/c3ae6ee2-8099-713d-3411-c3a6e280947e",
                         "Advanced Server": "https://archive.org/download/windows-nt-3.1-build-404/winnt31_404__x86fre.wks.beta.iso"
                     },
-                    "475": {
+                    " 475": {
                         "Workstation": "https://mega.nz/#!u4RQ0bCQ!3Y4kScZO9RrILvD8t_EEeaSmKu8QOMLYJjSNfwGeipg",
                         "Advanced Server": "https://archive.org/download/ms-winnt-31-ads-jun93/WINDOWS_NT%20%283.1%20Advanced%20Server%20build%20475%29.iso"
                     }
@@ -410,16 +503,16 @@
             },
             updates: {
                 " Beta Releases": {
-                "854": "https://archive.org/download/windows-nt-3.51-build-854_202505/3.50.854.1_x86fre_Workstation_en-us-NT35.iso",
-                "889": "https://mega.nz/file/SohFGJZC#k1ck2J3OI_vAloMaR5-E9huHE6ZS5EXiCKUkIcR7vxM",
-                "1002": "https://mega.nz/#!SwZHRazb!Mn5bhqvlc2p0PnByw2oMReuACjQv5AD5o50yidd9AQ8",
+                " 854": "https://archive.org/download/windows-nt-3.51-build-854_202505/3.50.854.1_x86fre_Workstation_en-us-NT35.iso",
+                " 889": "https://mega.nz/file/SohFGJZC#k1ck2J3OI_vAloMaR5-E9huHE6ZS5EXiCKUkIcR7vxM",
+                " 1002": "https://mega.nz/#!SwZHRazb!Mn5bhqvlc2p0PnByw2oMReuACjQv5AD5o50yidd9AQ8",
                 "1024 (RC2)": {
                     "Workstation": "https://archive.org/compress/ms-winnt351-rc2-fd/formats=ISO%20IMAGE&file=/ms-winnt351-rc2-fd.zip",
                     "Server": "https://mega.nz/#!ntIFmSjS!-t-UwfjPQi4gOoovNU3d0Hab0_3uAauXGgN16oqynUc"
                 },
             },
             "RTM": {
-                "1057 (RTM)": {
+                " 1057 (RTM)": {
                     "Workstation": "https://archive.org/download/ntwks351_iso/NTWKS351.iso",
                     "Server": "https://archive.org/download/nt351server/nt351server.iso"
                 }
@@ -436,7 +529,7 @@
             "Windows Cairo": {
                 updates: {
                     "Beta Releases": {
-                        "1175": "https://archive.org/download/microsoft-cairo-1175/cairo1175.rar"
+                        " 1175": "https://archive.org/download/microsoft-cairo-1175/cairo1175.rar"
                     }
                 }
                 
@@ -445,54 +538,54 @@
              "Windows NT 4.0": {
                 updates: {
                     "Beta Releases": {
-                        "1130": {
+                        " 1130": {
                             "Server": "https://archive.org/download/windows-nt-4.0-builds/1.%20Beta%201/4.0.1130.1/Server/Windows%20NT%204.0%20Cairo%20Server%20Build%201130.iso",
                             "Workstation": "https://archive.org/download/windows-nt-4.0-builds/1.%20Beta%201/4.0.1130.1/Workstation/WINNT_1130W.iso"
                         },
-                        "1141": {
+                        " 1141": {
                             "Server": "https://archive.org/download/windows-nt-4.0-builds/1.%20Beta%201/4.0.1141.1/Server/NT4_1141S.iso",
                             "Workstation": "https://archive.org/download/windows-nt-4.0-builds/1.%20Beta%201/4.0.1141.1/Workstation/4.00.1141.1_x86fre_Workstation_en-us-NTWKS40.iso"
                         },
-                        "1166":  {
+                        " 1166":  {
                             "Server": "https://archive.org/download/windows-nt-4.0-builds/1.%20Beta%201/4.0.1166.1/Server/en-US_1166_nt4srv.beta_cairo.iso",
                             "Workstation": "https://archive.org/download/windows-nt-4.0-builds/1.%20Beta%201/4.0.1166.1/Workstation/NT4_1166W.iso"
                         },
-                        "1175": "https://archive.org/download/windows-nt-4.0-builds/1.%20Beta%201/4.0.1175.1/Server/Cairo.ver.4.0.1175.1.English.iso",
-                        "1227": {
+                        " 1175": "https://archive.org/download/windows-nt-4.0-builds/1.%20Beta%201/4.0.1175.1/Server/Cairo.ver.4.0.1175.1.English.iso",
+                        " 1227": {
                             "Server": "https://archive.org/download/windows-nt-4.0-builds/1.%20Beta%201/4.0.1227.1/Server/Windows%20NT.ver.4.00.1227%20Srv.English.7z",
                             "Workstation": "https://archive.org/download/windows-nt-4.0-builds/1.%20Beta%201/4.0.1227.1/Workstation/Windows%20NT.ver.4.00.1227%20Wks.English.7z"
                         },
-                        "1234": {
+                        " 1234": {
                             "Server": "https://archive.org/download/windows-nt-4.0-builds/1.%20Beta%201/4.0.1234.1/Server/Windows%20NT.ver.4.00.1234%20Srv.German.rar",
                             "Workstation": "https://archive.org/download/windows-nt-4.0-builds/1.%20Beta%201/4.0.1234.1/Workstation/Windows%20NT.ver.4.00.1234%20Wks.English.rar"
                         },
-                        "1264": {
+                        " 1264": {
                             "Server": "https://archive.org/download/windows-nt-4.0-builds/2.%20Beta%202/4.0.1264.1/Server/Windows%20NT.ver.4.00.1264%20Srv.English.rar",
                             "Workstation": "https://archive.org/download/windows-nt-4.0-builds/2.%20Beta%202/4.0.1264.1/Workstation/Windows%20NT.ver.4.00.1264%20Wks.English.7z"
                         },
-                        "1273": {
+                        " 1273": {
                             "Server": "https://archive.org/download/windows-nt-4.0-builds/2.%20Beta%202/4.0.1273.1/Server/Windows%20NT.ver.4.00.1273%20Srv.English.rar",
                             "Workstation": "https://archive.org/download/windows-nt-4.0-builds/2.%20Beta%202/4.0.1273.1/Workstation/Windows%20NT.ver.4.00.1273.English.rar"
                         },
-                        "1287": "https://archive.org/download/windows-nt-4.0-builds/2.%20Beta%202/4.0.1287.1/Server/Windows%20NT.ver.4.00.1287%20Srv.English.7z",
-                        "1293": {
+                        " 1287": "https://archive.org/download/windows-nt-4.0-builds/2.%20Beta%202/4.0.1287.1/Server/Windows%20NT.ver.4.00.1287%20Srv.English.7z",
+                        " 1293": {
                             "Server": "https://archive.org/download/windows-nt-4.0-builds/2.%20Beta%202/4.0.1293.1/Server/Windows%20NT.ver.4.00.1293.1%20.Srv.iso",
                             "Workstation": "https://archive.org/download/windows-nt-4.0-builds/2.%20Beta%202/4.0.1293.1/Workstation/Windows%20NT.ver.4.00.1293%20Wks.English.iso"
                         },
-                        "1314": {
+                        " 1314": {
                             "Server": "https://archive.org/download/windows-nt-4.0-builds/2.%20Beta%202/4.0.1314.1/Server/English/Windows%20NT.ver.4.00.1314%20Srv.English.7z",
                             "Workstation": "https://archive.org/download/windows-nt-4.0-builds/2.%20Beta%202/4.0.1314.1/Workstation/English/Windows%20NT.ver.4.00.1314%20Wks.English.7z"
                         },
-                        "1327": {
+                        " 1327": {
                             "Server": "https://archive.org/download/windows-nt-4.0-builds/3.%20RC%201/4.0.1327.1/Server/Windows%20NT.ver.4.00.1327%20Srv.English.rar",
                             "Workstation": "https://archive.org/download/windows-nt-4.0-builds/3.%20RC%201/4.0.1327.1/Workstation/Windows%20NT.ver.4.00.1327%20Wks.English.rar"
                         },
-                        "1345": {
+                        " 1345": {
                             "Server": "https://archive.org/download/windows-nt-4.0-builds/3.%20RC%201/4.0.1345.1/Server/Windows%20NT.ver.4.00.1345%20Srv.English.rar",
                             "Workstation": "https://archive.org/download/windows-nt-4.0-builds/3.%20RC%201/4.0.1345.1/Workstation/Windows%20NT.ver.4.00.1345%20Wks.English.iso"
                         },
-                        "1353": "https://archive.org/download/windows-nt-4.0-builds/4.%20RC%202/4.0.1353.1/Server/Windows%20NT.ver.4.00.1353.English.iso",
-                        "1369": "https://archive.org/download/windows-nt-4.0-builds/4.%20RC%202/4.0.1369.1/Workstation/Windows%20NT.ver.4.00.1369.English.7z"
+                        " 1353": "https://archive.org/download/windows-nt-4.0-builds/4.%20RC%202/4.0.1353.1/Server/Windows%20NT.ver.4.00.1353.English.iso",
+                        " 1369": "https://archive.org/download/windows-nt-4.0-builds/4.%20RC%202/4.0.1369.1/Workstation/Windows%20NT.ver.4.00.1369.English.7z"
                                        
                     },
                     "RTM": {
@@ -520,102 +613,102 @@
  "Windows 2000": {
         "updates": {
             "NT 5.0 (Beta)": {
-                "1515": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1515.1_x86fre_client-workstation_retail_en-us-NTWKS40.iso",
-                "1575": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1575.1_x86fre_client-workstation_retail_en-us-I386.iso",
-                "1580": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1580.1_x86fre_client-workstation_retail_en-us-NT5W1580.iso",
-                "1585": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1585.1_x86fre_client-workstation_retail_en-us-NTWKS40.iso",
-                "1592": {
+                " 1515": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1515.1_x86fre_client-workstation_retail_en-us-NTWKS40.iso",
+                " 1575": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1575.1_x86fre_client-workstation_retail_en-us-I386.iso",
+                " 1580": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1580.1_x86fre_client-workstation_retail_en-us-NT5W1580.iso",
+                " 1585": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1585.1_x86fre_client-workstation_retail_en-us-NTWKS40.iso",
+                " 1592": {
                     "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1592.1_x86fre_server-standardserver_retail_en-us-CD_ROM.iso",
                     "Workstation": "https://archive.org/download/5.00.1592.1-workstation/5.00.1592.1_workstation.iso"
                 },
-                "1627": "https://mega.nz/#!qlgGkCRb!Qy7QDneCxMsql39cOZ-hm0aG5Wby4ET47CZHyfQPgac",
-                "1631": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1631.1_x86fre_server-standardserver_retail_en-us-WNNT5S.iso",
-                "1671 (Beta 1)": {
+                " 1627": "https://mega.nz/#!qlgGkCRb!Qy7QDneCxMsql39cOZ-hm0aG5Wby4ET47CZHyfQPgac",
+                " 1631": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1631.1_x86fre_server-standardserver_retail_en-us-WNNT5S.iso",
+                " 1671 (Beta 1)": {
                     "Workstation": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1671.1_axpfre-x86fre-nec98fre_client-workstation_retail_ja-jp-NTWKS50AJ.iso",
                     "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1631.1_x86fre_server-standardserver_retail_en-us-WNNT5S.iso"
                 },
-                "1691": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1691.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
-                "1701": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1701.1_x86fre_server-standardserver_retail_en-us-1701SRV.iso",
-                "1717": "https://archive.org/download/NT5_5.00.1717.1_WKS/PWA17WXX.rar",
-                "1723": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1723.1_x86fre_client-workstation_retail_en-us-1723.iso",
-                "1729": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1729.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
-                "1738": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1738.1_x86fre_client-workstation_retail_en-us-TEMP.iso",
-                "1743": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1743.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
-                "1745": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1745.1_x86fre_server-standardserver_retail_en-us-NTSRV50A.iso",
-                "1762": "https://archive.org/download/5.00.1762.1-x-86fre-client-workstation-retail-en-us-ntfixed/5.00.1762.1_x86fre_client-workstation_retail_en-us-NTFIXED.iso",
-                "1773 (Interim Developer Release)": {
+                " 1691": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1691.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                " 1701": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1701.1_x86fre_server-standardserver_retail_en-us-1701SRV.iso",
+                " 1717": "https://archive.org/download/NT5_5.00.1717.1_WKS/PWA17WXX.rar",
+                " 1723": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1723.1_x86fre_client-workstation_retail_en-us-1723.iso",
+                " 1729": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1729.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                " 1738": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1738.1_x86fre_client-workstation_retail_en-us-TEMP.iso",
+                " 1743": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1743.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                " 1745": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1745.1_x86fre_server-standardserver_retail_en-us-NTSRV50A.iso",
+                " 1762": "https://archive.org/download/5.00.1762.1-x-86fre-client-workstation-retail-en-us-ntfixed/5.00.1762.1_x86fre_client-workstation_retail_en-us-NTFIXED.iso",
+                " 1773 (Interim Developer Release)": {
                     "Workstation": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1773.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
                     "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1773.1_x86fre_server-standardserver_retail_en-us-NT5_1773S.iso"
                 },
-                "1796": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1796.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
-                "1814": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1814.1_x86fre_client-standardserver_retail_en-us-NTSRV50A.iso",
-                "1816": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1816.1_x86fre_client-workstation-retail-en-us-NTWKS50A.iso",
-                "1835": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1835.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
-                "1848": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1848.1_x86fre_server-standardserver_retail_en-us-NTSRV50A.iso",
-                "1855": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1855.1_axpfre_server-advancedserver_retail_en-us-NTSE50A.iso",
-                "1859": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1859.1_x86fre_client-workstation_retail_en-us-WIN2K_1859W.iso",
-                "1877 (Beta 2)": {
+                " 1796": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1796.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                " 1814": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1814.1_x86fre_client-standardserver_retail_en-us-NTSRV50A.iso",
+                " 1816": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1816.1_x86fre_client-workstation-retail-en-us-NTWKS50A.iso",
+                " 1835": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1835.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                " 1848": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1848.1_x86fre_server-standardserver_retail_en-us-NTSRV50A.iso",
+                " 1855": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1855.1_axpfre_server-advancedserver_retail_en-us-NTSE50A.iso",
+                " 1859": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1859.1_x86fre_client-workstation_retail_en-us-WIN2K_1859W.iso",
+                " 1877 (Beta 2)": {
                     "Workstation": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1877.1_axpchk_client-workstation_retail_en-us-NTWKS50A.iso",
                     "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1877.1_axpfre_server-standardserver_retail_en-us-NTSRV50A.iso"
                 },
-                "1888": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1888.1_x86fre_server-advancedserver_retail_en-us-WINNT_1888.iso",
-                "1902": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1902.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
-                "1906": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1906.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
-                "1911": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1911.1_x86fre_server-standardserver_retail_en-us-NT5_1911.iso"
+                " 1888": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1888.1_x86fre_server-advancedserver_retail_en-us-WINNT_1888.iso",
+                " 1902": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1902.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                " 1906": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1906.1_x86fre_client-workstation_retail_en-us-NTWKS50A.iso",
+                " 1911": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1911.1_x86fre_server-standardserver_retail_en-us-NT5_1911.iso"
             },
             "Windows 2000 Beta": {
-               "1946 (Beta 3 RC0)": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1946.1_x86fre_client-professional_retail_en-us-W2KPROI_USA%20%28WWPC%20copy%29.iso",
-               "1964": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1964.1_x86fre_server-standardserver_retail_en-us-W2KSRVI_USA.iso",
-               "1965": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1965.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
-               "1969": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1969.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
-               "1983": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1983.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
-               "1989": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1989.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
-               "1993": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1993.1_x86fre_server-standardserver_retail_en-us-WIN2KS_A.iso",
-               "1994": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1994.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
-               "1999": {
+               " 1946 (Beta 3 RC0)": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1946.1_x86fre_client-professional_retail_en-us-W2KPROI_USA%20%28WWPC%20copy%29.iso",
+               " 1964": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1964.1_x86fre_server-standardserver_retail_en-us-W2KSRVI_USA.iso",
+               " 1965": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1965.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               " 1969": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1969.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               " 1983": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1983.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               " 1989": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1989.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               " 1993": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1993.1_x86fre_server-standardserver_retail_en-us-WIN2KS_A.iso",
+               " 1994": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1994.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               " 1999": {
                 "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1999.1_x86chk_client-professional_retail_en-us-W2PROI_USA.iso",
                 "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1999.1_x86fre_server-standardserver_retail_en-us-W2SRVI_USA.iso",
                 "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1999.1_x86fre_server-advancedserver_retail_en-us-W2ASVI_USA.iso",
                 "Datacenter Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.1999.1_x86fre_server-advancedserver_retail_en-us-W2ASVI_USA.iso"
                },
-               "2000.1": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2000.1_x86fre_client-professional_retail_en-us-W2PROI_USA.iso",
-               "2000.3 (Beta 3 RC1)": {
+               " 2000.1": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2000.1_x86fre_client-professional_retail_en-us-W2PROI_USA.iso",
+               " 2000.3 (Beta 3 RC1)": {
                 "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2000.3_axpfre_client-professional_retail_en-us-W2PROA_USA.iso",
                 "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2000.3_axpfre_server-standardserver_retail_en-us-W2SRVA_USA.iso",
                 "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2000.3_axpfre_server-advancedserver_retail_en-us-W2ASVA_USA.iso",
                },
-               "2020": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2020.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
-               "2031 (Beta 3)": {
+               " 2020": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2020.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               " 2031 (Beta 3)": {
                 "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2031.1_axpchk_client-professional_retail_en-us-W2KPRCA_USA.iso",
                 "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2031.1_axpfre_server-standard_retail_en-us%20%28alt%29.zip",
                 "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2031.1_axpfre_server-advancedserver_retail_en-us-W2KASVA_USA.iso"
                },
-               "2068": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2068.1_x86fre_server-standardserver_retail_en-us-W2KSRVI_USA.iso",
-               "2072 (RC1)": {
+               " 2068": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2068.1_x86fre_server-standardserver_retail_en-us-W2KSRVI_USA.iso",
+               " 2072 (RC1)": {
                 "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2072.1_x86chk_client-professional_retail_en-us-W2KPRCI_USA.iso",
                 "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2072.1_axpfre_server-standardserver_retail_en-us-W2KSRVA_USA.iso",
                 "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2072.1_x86fre_server-advancedserver_retail_en-us-W2KASVI_USA.iso"
                },
-               "2091": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2091.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
-               "2092": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2092.1_x86chk_client-professional_retail_en-us-W2KPRCI_USA.iso",
-               "2124": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2124.1_x86fre_server-advancedserver_retail_en-us-W2AIS_EN.iso",
-               "2128 (RC2)": {
+               " 2091": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2091.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               " 2092": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2092.1_x86chk_client-professional_retail_en-us-W2KPRCI_USA.iso",
+               " 2124": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2124.1_x86fre_server-advancedserver_retail_en-us-W2AIS_EN.iso",
+               " 2128 (RC2)": {
                 "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2128.1_x86chk_client-professional_retail_en-us-W2PIX_EN.iso",
                 "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2128.1_x86fre_server-standardserver_retail_en-us-W2SIS_EN.iso",
                 "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2128.1_x86fre_server-advancedserver_retail_en-us-W2AIS_EN.iso"
                },
-               "2151": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2151.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
-               "2167": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2167.1_x86fre_client-professional_retail_en-us-W2PIS_EN.iso",
-               "2183 (RC3)": {
+               " 2151": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2151.1_x86fre_client-professional_retail_en-us-W2KPROI_USA.iso",
+               " 2167": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2167.1_x86fre_client-professional_retail_en-us-W2PIS_EN.iso",
+               " 2183 (RC3)": {
                 "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2183.1_x86fre_client-professional_retail_en-us-W2PIS_EN.iso",
                 "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2183.1_x86fre_server-standardserver_retail_en-us-W2SIS_EN.iso",
                 "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2183.1_x86fre_server-advancedserver_retail_en-us-W2AIS_EN.iso",
                 "Datacenter Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2183.1_x86fre_server-datacenterserver_retail_en-us-W2DTC_EN.iso"
                },
-               "2190": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2190.1_x86fre_server-advancedserver_retail_en-us-W2AIS_EN.iso"
+               " 2190": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2190.1_x86fre_server-advancedserver_retail_en-us-W2AIS_EN.iso"
             },
             "RTM": {
-                "2195 (RTM}": {
+                " 2195 (RTM}": {
                     "Professional": "https://archive.org/download/win-2000-rtm-en/Win2000RTM_EN.iso",
                     "Server": "https://archive.org/download/Win2000ServerRTMCHS/5.00.2195.1_x86fre_Server_zh-cn-W2SFPP_CN.iso",
                     "Advanced Server": "https://archive.org/download/windows-2000_202010/Windows%202000%20Advanced%20Server.iso",
@@ -623,41 +716,41 @@
                 }
             },
             "Service Packs": {
-             "1600": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.1600_x86fre_client-server-en-us%20%28service%20pack%29.zip",
-             "1610": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.1610_x86fre_client-server-en-us%20%28service%20pack%29.zip",
-             "1620 (SP1)": {
+             " 1600": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.1600_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             " 1610": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.1610_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             " 1620 (SP1)": {
                 "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.1620_x86fre_client-professional_select_en-us-SP1PSEL_EN.iso",
                 "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.1620_x86fre_client-server-en-us%20%28service%20pack%29.zip",
                 "Advanced Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.1620_x86fre_server-advancedserver_select_en-us-SP1ASEL_EN.iso"
              },
-             "2793": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.2793_x86fre_client-server-en-us%20%28service%20pack%29.zip",
-             "2951 (SP2)": {
+             " 2793": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.2793_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             " 2951 (SP2)": {
                 "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.2951_x86fre_client-professional_oem_en-us-SP2POEM_EN.iso",
                 "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.2951_x86fre_client-server-en-us%20%28service%20pack%29.zip"
              },
-             "4448": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.4448_x86fre_client-server-en-us%20%28service%20pack%29.zip",
-             "5438 (SP3)": {
+             " 4448": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.4448_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             " 5438 (SP3)": {
                 "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.5438_x86fre_client-professional_oem_de-de-YRMPOEM_DE.iso",
                 "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.5438_x86fre_client-server-en-us%20%28service%20pack%29.zip",
              },
-             "6623": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6623_x86fre_client-server-en-us%20%28service%20pack%29.zip",
-             "6632": {
+             " 6623": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6623_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             " 6632": {
                 "Professional": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6632_x86fre_client-professional_retail_en-us-ZB1PFRE_EN.iso",
                 "Server": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6632_x86fre_client-server-de-de%20%28service%20pack%20CD%29.iso"
              },
-             "6697": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6697_x86fre_client-server-en-us%20%28service%20pack%29.zip",
-             "6704": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6704_x86fre_client-server-en-us%20%28service%20pack%29.zip",
-             "6706": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6706_x86fre_client-server-en-us%20%28service%20pack%29.zip",
-             "6712": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6712_x86fre_client-server-en-us%20%28service%20pack%29.zip",
-             "6715": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6715_x86fre_client-server-en-us%20%28service%20pack%29.zip",
-             "6717 RC 4.80": "https://archive.org/download/Win2000ProSP4Beta2195.6717_RC4.80/Windows%202000%20Professional%20SP4%20Beta%20%28Build%202195.6717%29%20%28RC%204.80%29.iso",
-             "6717 (SP4)": {
+             " 6697": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6697_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             " 6704": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6704_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             " 6706": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6706_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             " 6712": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6712_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             " 6715": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2195.6715_x86fre_client-server-en-us%20%28service%20pack%29.zip",
+             " 6717 RC 4.80": "https://archive.org/download/Win2000ProSP4Beta2195.6717_RC4.80/Windows%202000%20Professional%20SP4%20Beta%20%28Build%202195.6717%29%20%28RC%204.80%29.iso",
+             " 6717 (SP4)": {
                 "Professional": "https://archive.org/download/windows_2000_sp4_pro_en-de-ru-tr_x86/en_windows_2000_sp4_pro_5.0.2195.6717_MSDN_ZRMPFPP_EN.iso",
                 "Server": "https://archive.org/download/WinSrvr200SP4/Windows%20Server%202000%20Service%20Pack%204.ISO",
                 "Advanced Server": "https://archive.org/download/windows-2000-advanced-server-sp-4/Windows%202000%20Advanced%20Server%20SP4.ISO",
                 "Datacenter Server": "https://archive.org/download/Windows2000DatacenterServerSP4/5.00.2195.6717_x86fre_DTCServer_en-us.iso"
              },
-             "7045 (Update Rollup 1)": "https://archive.org/download/2005-12-3014.1-updaterollup1forwindows2000servicepack4v2multigreek/Disc01.iso"
+             " 7045 (Update Rollup 1)": "https://archive.org/download/2005-12-3014.1-updaterollup1forwindows2000servicepack4v2multigreek/Disc01.iso"
             }
 
         }
