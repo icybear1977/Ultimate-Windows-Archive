@@ -338,7 +338,9 @@
                     }
             },
 "Windows XP": {
-        "buildMessages": "⚠️ This is an AXP64 version which will only work on emulators such as QEMU.",
+        message: "Download Plus! XP from here.<br><br><a href='https://archive.org/download/plus_20191226/PLUS%21.ISO' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download Plus! XP</a>",
+        buildMessages: {
+            " 2210": "⚠️ This is an AXP64 version which will only work on emulators such as QEMU." },
         "updates": {
             "Whistler Betas": {
                 " 2202": "https://archive.org/download/windows-whistler-xp-build-list-professional/usa_2202__x86fre.pro_whistler.iso",
@@ -422,10 +424,100 @@
              },
             "RTM": {
                 " 2600": {
-                    "Professional": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.0.xpclient.010817-1148_x86chk_client-professional_retail_en-us-WXPFPP_EN.iso",
-                    "Home": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.0.xpclient.010817-1148_x86fre_client-home_retail_en-us-WXHFPP_EN.iso"
+                    "Professional": {
+                        "x86": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.0.xpclient.010817-1148_x86chk_client-professional_retail_en-us-WXPFPP_EN.iso",
+                        "IA-64": "https://archive.org/download/MicrosoftWindowsXPBuildCollectionIA64/Version%202002/5.1.2600.0.xpclient.010817-1148_ia64fre_client-professional_retail_en-us-WXPIFPP_EN.iso"
+                    },
+                        "Home": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.0.xpclient.010817-1148_x86fre_client-home_retail_en-us-WXHFPP_EN.iso"
                 }
+            },
+            "Service Packs": {
+                " 1050": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.1050.xpsp1.020529-1810_x86fre_client-en-us%20%28service%20pack%29.iso",
+                " 1065": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.1065.xpsp1.020625-1800_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 1078": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.1078.xpsp1.020716-1800_x86fre_client-professional_retail_en-us.7z",
+                " 1081": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.1081.xpsp1.020719-1845_x86fre_client-professional_volume_en-us-X1BPFRE_EN.iso",
+                " 1106 (SP1)": {
+                    "Professional": {
+                        "x86": "https://archive.org/download/windows-xp.ver.-sp-1.-english/WXPOEM_EN.ISO",
+                        "IA-64": "https://archive.org/download/windows-xp_202312/Windows%20XP%20Professional%2064-bit%20Corporate%20Edition%28CD%20Key%20VCFQD-V9FX9-46WVH-K3CD4-4J3JM%29.iso"
+                    },
+                    "Home": "https://archive.org/download/windows_xp_home_sp1/XRMHOEM_EN.iso"
+                },
+                " 1155": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.1155.xpsp2.021217-1051_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 1185": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.1185.xpsp2.030313-1931_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 1194": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.1194.xpsp2.030401-1855_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 1204": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.1204.xpsp2.030410-1604_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 1213": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.1213.xpsp2.030424-1654_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 2055": {
+                    "Professional": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2055.xpsp_sp2_beta1.031215-1745_x86fre_client-professional_retail_en-us-VB1PFRE_EN.iso",
+                    "Home": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2055.xpsp_sp2_beta1.031215-1745_x86fre_client-en-us%20%28service%20pack%29.zip"
+                },
+                " 2075": "https://archive.org/download/Windows-Whistler-Build-2202-2600-collection-71-files/5.1.2600.2075.xpsp.040202-1935_x86fre_client-mediacenter_retail_en-us-CD_ROM.iso",
+                " 2082": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2082.xpsp.040216-1810_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 2096": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2096.xpsp_sp2_rc1.040311-2315_x86fre_client-en-us%20%28service%20pack%29.iso",
+                " 2111": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2111.xpsp.040409-1745_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 2120": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2120.xpsp.040423-1852_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 2126": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2126.xpsp.040503-1841_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 2135": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2135.xpsp.040518-1812_x86fre_client-zh-cn%20%28service%20pack%29.zip",
+                " 2138": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2138.xpsp.040522-1636_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 2142": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2142.xpsp.040528-0019_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 2148": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2148.xpsp_sp2_rc2.040607-1947_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 2149": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2149.xpsp_sp2_rc2.040610-1520_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 2162": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2162.xpsp_sp2_idx.040709-1830_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 2163": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2163.xpsp.040710-1735_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 2180 (SP2)": {
+                    "Professional": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2180.xpsp_sp2_rtm.040803-2158_x86fre_client-professional_retail_en-us%20%5BSP2b%5D%20%28alt%29.zip",
+                    "Professional N": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2180.xpsp_sp2_rtm.040803-2158_x86fre_client-professionaln_retail_en-us-VX2PRMFPP_EN.iso",
+                    "Home": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2180.xpsp_sp2_rtm.040803-2158_x86fre_client-home_retail_en-us-VX2HFPP_EN.iso",
+                    "Home N": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.2180.xpsp_sp2_rtm.040803-2158_x86fre_client-homen_retail_en-us-VX2HRMFPP_EN.iso"
+                },
+                " 3180": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.3180.xpsp.070718-2058_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 3205": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.3205.xpsp.070831-1912_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 3244": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.3244.xpsp.071030-1537_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 3264": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.3264.xpsp.071130-1427_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 3282": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.3282.xpsp.071227-1539_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 3300": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.3300.xpsp.080125-2028_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 3311": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.3311.xpsp.080212-0005_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 5503": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.5503.xpsp.080306-1604_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 5508": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.5508.xpsp.080320-1628_x86fre_client-en-us%20%28service%20pack%29.zip",
+                " 5511": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.5511.xpsp.080404-0229_x86fre_client-zh-tw%20%28service%20pack%29.zip",
+                " 5512 (SP3)": {
+                    "Professional": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.5512.xpsp.080413-2111_x86fre_client-professional_volume_en-us-GRTMPVOL_EN.iso",
+                    "Professional N": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.5512.xpsp.080413-2111_x86fre_client-professionaln_retail_en-us-GRTMPRMFPP_EN.iso",
+                    "Home": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.5512.xpsp.080413-2111_x86fre_client-home_retail_en-us-GRTMHFPP_EN.iso",
+                    "Home N": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.5512.xpsp.080413-2111_x86fre_client-homen_retail_en-us-GRTMHRMFPP_EN.iso",
+                    "Home K": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.5512.xpsp.080413-2111_x86fre_client-homek_retail_en-us-GRTMHKFPP_EN.iso",
+                    "Home KN": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2600.5512.xpsp.080413-2111_x86fre_client-homekn_retail_en-us-GRTMHKNFPP_EN.iso"
+    }  
+    },
+                "Starter Edition": {
+                " 2614": "https://archive.org/download/4334134218/tr_winxp_starter_x86_with_sp2_OEM_20051024_vrm.iso",
+                " 2847": "https://archive.org/download/winxpstartermalaysia/V2ACOEM_EN-MY.iso",
+                " 2901 (RTM)": "https://archive.org/download/windowsxpstartereditionenglish/V2ACOEM_EN.iso",
+                " 5512": "https://archive.org/download/WinXPStarterEditionSP3English/Windows_XP_Starter_Edition_SP3_English.iso"
+            },
+            "x64 Edition (AMD64)": {
+                " 1069": "https://archive.org/download/Microsoft-Windows-XP-x64/5.2.3790.1069.srv03_spbeta.030905-1850_amd64fre_client-professional_retail_en-us-AB1PXFRE_EN.iso",
+                " 1218 (dnsrv)": "https://archive.org/download/Microsoft-Windows-XP-x64/5.2.3790.1218.dnsrv.040708-2027_amd64fre_client-professional_retail_en-us-AB2PXFRE_EN.iso",
+                " 1218": "https://archive.org/download/WinXP_Pro_x64Edition_5.2.3790.1218_dnsrv_idx01/w2k3sp1_1218_usa_x64fre_pro.iso",
+                " 1247": "https://archive.org/download/MicrosoftWindowsXPBuildCollectionAMD64/5.2.3790.1247.dnsrv_idx02.041011-1313_amd64fre_client-professional_retail_en-us-AB2PXFRE_EN.iso",
+                " 1260": "https://archive.org/download/MicrosoftWindowsXPBuildCollectionAMD64/5.2.3790.1260.dnsrv_idx01.041106-1435_amd64fre_client-professional_retail_en-us-AB2PXFRE_EN.iso",
+                " 1289": "https://archive.org/download/MicrosoftWindowsXPBuildCollectionAMD64/5.2.3790.1289.srv03_sp1_rc1.041202-1618_amd64fre_client-professional_retail_en-us-AR1PXFRE_EN.iso",
+                " 1421": "https://archive.org/download/MicrosoftWindowsXPBuildCollectionAMD64/5.2.3790.1421.dnsrv.050118-1818_amd64fre_client-professional_retail_en-us-AR1PXFRE_EN.iso",
+                " 1433": "https://archive.org/download/MicrosoftWindowsXPBuildCollectionAMD64/5.2.3790.1433.srv03_sp1_rc2.050203-1635_amd64chk_client-professional_retail_en-us-AR2PXCHK_EN.iso",
+                " 1830 (RTM)": "https://archive.org/download/MicrosoftWindowsXPBuildCollectionAMD64/5.2.3790.1830.srv03_sp1_rtm.050324-1447_amd64fre_client-professional_retail_en-us-AX2PXFPP_EN.iso",
+                " 2725": "https://archive.org/download/MicrosoftWindowsXPBuildCollectionAMD64/5.2.3790.2725.dnsrv.060615-2035_amd64fre_client-professional_retail_en-us-CB1PXFRE_EN.iso",
+                " 2825": "https://archive.org/download/MicrosoftWindowsXPBuildCollectionAMD64/5.2.3790.2825.srv03_sp2_rc.061103-1303_amd64fre_client-professional_volume_en-us-ARMPXVOL_EN.iso",
+                " 3959": "https://archive.org/download/MicrosoftWindowsXPBuildCollectionAMD64/5.2.3790.3959.srv03_sp2_rtm.070216-1710_amd64fre_client-professional_retail_en-us-CRMPXFPP_EN.iso"
+    },
+            "Embedded": {
+                " 1201": "https://archive.org/download/WindowsXPEmbeddedSP3/XPESP3.iso"
+            },
+            "Tablet PC Edition": {
+                " 1106 (RTM 2002)": "https://archive.org/download/wxtfpp-en/WXTFPP_EN.ISO",
+                " 2180 (RTM 2005)": "https://archive.org/download/WindowsXPTabletPC2005/en_winxp_tablet_2005.iso"
             }
+
         
         }
 }
@@ -465,7 +557,8 @@
                     "528 (SP3)": "https://archive.org/download/microsoft-windows-nt-3.1-service-pack-3-english-swedish-i386-mips-alpha/NT31_SP3_ENG__i386_ALPHA_MIPS.7z"
                 }
 
-            }
+            },
+            
         },
         "Windows NT 3.5": {
             buildMessages: {
