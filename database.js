@@ -338,7 +338,8 @@
                     }
             },
 "Windows XP": {
-        "buildMessages": "⚠️ This is an AXP64 version which will only work on emulators such as QEMU.",
+        "buildMessages":
+        " 2210": "⚠️ This is an AXP64 version which will only work on emulators such as QEMU.",
         "updates": {
             "Whistler Betas": {
                 " 2202": "https://archive.org/download/windows-whistler-xp-build-list-professional/usa_2202__x86fre.pro_whistler.iso",
