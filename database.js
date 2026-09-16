@@ -206,7 +206,7 @@
             }
             },
             "Windows 98": {
-                message: "Download Plus! 98 from here.<br><br><a href='https://archive.org/download/PLUS98_201905/PLUS98.ISO' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download Plus! 98</a>",
+                message: "⚠️ Windows 98 requires a boot disk to start the installer. Download Plus! 98 from here. <br><br><a href='https://winworldpc.com/download/483dc393-4225-c389-11c3-a6e280947e52/from/c3ae6ee2-8099-713d-3411-c3a6e280947e' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download Windows 98 FE Boot Disk</a> <br><br><a href='https://winworldpc.com/download/49c380c2-a9c3-af25-c389-11c3a6e28094/from/c3ae6ee2-8099-713d-3411-c3a6e280947e' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download Windows 98 SE Boot Disk</a> <br><br><a href='https://archive.org/download/PLUS98_201905/PLUS98.ISO' target='_blank' style='background-color:#ffcc00; color:#332b00; padding:6px 12px; text-decoration:none; border-radius:4px;'>Download Plus! 98</a> ",
                 updates: { "Memphis (Beta)": {
                  " 1351": "https://archive.org/download/win98buildscollection/4.10.1351_x86fre_client_en-us-MEMPHIS1351.iso", 
                  " 1353": "https://archive.org/download/win98buildscollection/4.10.1353_x86fre_client_en-us-MEMPHIS1353.iso",  
@@ -286,7 +286,7 @@
               "2183A (RC1)": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2183a_x86fre_client_en-us-Win98%20Sec%20Edit.iso",
               "2185A (RC2)": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2185a_x86fre_client_en-us-Win98%20Sec%20Edit-%5BFull%5D.iso",
               "2222A (RTM)": "https://archive.org/download/windows-98-se-retail-english/4.10.2222a_x86fre_client_en-us-Win98%20SE.iso"
-              
+
             }
 
                 }
