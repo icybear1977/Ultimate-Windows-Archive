@@ -285,7 +285,8 @@
               "2174A": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2174a_x86fre_client_en-us-WIN98SE.iso",
               "2183A (RC1)": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2183a_x86fre_client_en-us-Win98%20Sec%20Edit.iso",
               "2185A (RC2)": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2185a_x86fre_client_en-us-Win98%20Sec%20Edit-%5BFull%5D.iso",
-              "2222A (RTM)": "https://archive.org/download/microsoftwindows98build2017-2222acollection17files/4.10.2222a_rc3_x86fre_client_en-us-win98.iso"
+              "2222A (RTM)": "https://archive.org/download/windows-98-se-retail-english/4.10.2222a_x86fre_client_en-us-Win98%20SE.iso"
+              
             }
 
                 }
