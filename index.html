@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ultimate Windows Archive</title>
+    <meta name="description" content="An extensive archive of Windows operating systems and builds.">
+    <meta name="theme-color" content="#1a202c" id="meta-theme-color">
     <style>
         :root {
             --bg-color: #4a5568;
@@ -12,17 +13,47 @@
             --text-main: #edf2f7;
             --text-muted: #a0aec0;
             --win-blue: #4299e1;
+            --win-blue-hover: #3182ce;
             --border-color: #2d3748;
             --warn-yellow: rgba(255, 230, 0, 0.1);
             --warn-text: #ecc94b;
+            --input-bg: #2d3748;
+            --input-text: #ffffff;
+            --hover-bg: #2d3748;
+            --success-color: #48bb78;
+            --warning-color: #ecc94b;
+            --danger-color: #f56565;
+        }
+
+        [data-theme="light"] {
+            --bg-color: #e2e8f0;
+            --box-bg: #ffffff;
+            --text-main: #1a202c;
+            --text-muted: #4a5568;
+            --win-blue: #3182ce;
+            --win-blue-hover: #2b6cb0;
+            --border-color: #cbd5e0;
+            --warn-yellow: #fefcbf;
+            --warn-text: #975a16;
+            --input-bg: #f7fafc;
+            --input-text: #1a202c;
+            --hover-bg: #edf2f7;
+            --success-color: #38a169;
+            --warning-color: #d69e2e;
+            --danger-color: #e53e3e;
+        }
+
+        * {
+            box-sizing: border-box;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
         }
 
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             background-color: var(--bg-color);
             background-image: 
-                linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+                linear-gradient(rgba(150, 150, 150, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(150, 150, 150, 0.05) 1px, transparent 1px);
             background-size: 40px 40px;
             background-attachment: fixed;
             display: flex;
@@ -36,52 +67,218 @@
 
         .archive-box {
             background-color: var(--box-bg);
-            padding: 40px;
+            padding: 35px 30px;
             border-radius: 12px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
             width: 100%;
-            max-width: 600px;
+            max-width: 760px;
             border: 1px solid var(--border-color);
+            position: relative;
         }
 
-        h1 { text-align: center; margin-top: 0; color: var(--win-blue); font-size: 28px; }
-        p.description { text-align: center; color: var(--text-muted); font-size: 14px; margin-bottom: 30px; }
+        .top-controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+        }
 
-        .step { margin-bottom: 25px; }
-        label { display: block; margin-bottom: 10px; font-weight: bold; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--win-blue); }
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: var(--text-main);
+            font-size: 20px;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        .theme-toggle:hover {
+            background-color: var(--hover-bg);
+        }
+
+        h1 { text-align: center; margin-top: 0; margin-bottom: 5px; color: var(--win-blue); font-size: 28px; }
+        .subtitle { text-align: center; color: var(--text-muted); font-size: 14px; margin-top: 0; margin-bottom: 20px; }
+        
+        .description { text-align: center; color: var(--text-muted); font-size: 14px; margin-bottom: 20px; }
+
+        /* Search Section */
+        .search-container {
+            position: relative;
+            margin-bottom: 25px;
+            z-index: 100;
+        }
+
+        #search-input {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 2px solid var(--border-color);
+            background-color: var(--input-bg);
+            color: var(--input-text);
+            font-size: 15px;
+            outline: none;
+        }
+
+        #search-input:focus {
+            border-color: var(--win-blue);
+        }
+
+        .search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin-top: 5px;
+            background-color: var(--box-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            max-height: 350px;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            display: none;
+        }
+
+        .search-results.active {
+            display: block;
+            animation: fadeSlideIn 0.2s ease-out forwards;
+        }
+
+        .search-item {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+        }
+
+        .search-item:last-child {
+            border-bottom: none;
+        }
+
+        .search-item:hover {
+            background-color: var(--hover-bg);
+        }
+
+        .search-path {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .search-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: var(--win-blue);
+        }
+
+        .search-item-details {
+            display: none;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed var(--border-color);
+        }
+
+        .search-item.expanded .search-item-details {
+            display: block;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        /* Recently Added Banner */
+        .recent-banner {
+            background: linear-gradient(135deg, rgba(66, 153, 225, 0.1), rgba(72, 187, 120, 0.1));
+            border: 1px solid rgba(66, 153, 225, 0.2);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+        .recent-banner-title {
+            font-weight: bold;
+            color: var(--win-blue);
+            margin-bottom: 6px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .recent-list { margin: 0; padding-left: 18px; }
+        .recent-list li { margin-bottom: 4px; line-height: 1.4; }
+        .recent-date { color: var(--text-muted); font-size: 11px; margin-left: 4px; }
+
+        /* Main Form */
+        .steps-container {
+            counter-reset: step-counter;
+        }
+
+        .step { 
+            margin-bottom: 20px; 
+            display: none;
+        }
+
+        .step.active {
+            display: block;
+            animation: fadeSlideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        label { 
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px; 
+            font-weight: bold; 
+            font-size: 12px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            color: var(--win-blue); 
+        }
+
+        label::before {
+            counter-increment: step-counter;
+            content: counter(step-counter) ". ";
+            margin-right: 5px;
+        }
+
+
 
         select {
             width: 100%;
             padding: 12px;
             border-radius: 8px;
             border: 1px solid var(--border-color);
-            background-color: #2d3748;
-            color: white;
+            background-color: var(--input-bg);
+            color: var(--input-text);
             font-size: 15px;
             cursor: pointer;
+            appearance: auto;
         }
 
         select:focus { outline: none; border-color: var(--win-blue); }
         select:disabled { opacity: 0.3; cursor: not-allowed; }
-        .hidden { display: none; }
+        
+        .hidden { display: none !important; }
 
         .warning-box {
             background: var(--warn-yellow);
             color: var(--warn-text); 
-            padding: 18px; 
+            padding: 15px; 
             border-radius: 8px; 
-            margin: 20px 0;
+            margin: 15px 0;
             font-size: 14px; 
             text-align: center; 
             border: 1px solid rgba(236, 201, 75, 0.3);
-            line-height: 1.6;
+            line-height: 1.5;
+            animation: fadeIn 0.4s ease forwards;
         }
 
         #download-section {
-            margin-top: 35px;
+            margin-top: 30px;
             text-align: center;
             padding-top: 25px;
             border-top: 1px solid var(--border-color);
+            display: none;
+        }
+
+        #download-section.active {
+            display: block;
+            animation: scaleIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         }
 
         .download-btn {
@@ -89,13 +286,19 @@
             background-color: var(--win-blue);
             color: white;
             text-decoration: none;
-            padding: 15px 35px;
+            padding: 14px 30px;
             border-radius: 8px;
             font-weight: bold;
-            font-size: 17px;
+            font-size: 16px;
+            transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .download-btn:hover { background-color: #3182ce; transform: translateY(-2px); }
+        .download-btn:hover { 
+            background-color: var(--win-blue-hover); 
+            transform: translateY(-2px); 
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
 
         .btn-link {
             background-color: var(--warn-text); 
@@ -107,201 +310,1173 @@
             display: inline-block;
             margin: 8px 5px 0 5px;
             font-size: 12px;
+            transition: filter 0.2s ease;
+        }
+
+        .btn-link:hover { filter: brightness(1.1); }
+
+        /* View Switcher */
+        .view-switch {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 22px;
+        }
+
+        .view-tab {
+            background: var(--input-bg);
+            color: var(--text-muted);
+            border: 1px solid var(--border-color);
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 13.5px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            transition: all 0.2s ease;
+        }
+
+        .view-tab:hover {
+            color: var(--text-main);
+            border-color: var(--win-blue);
+        }
+
+        .view-tab.active {
+            background: var(--win-blue);
+            color: #ffffff;
+            border-color: var(--win-blue);
+            box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
+        }
+
+        /* Under Construction Badge & VM Kit Card */
+        .construction-badge {
+            background: #ecc94b;
+            color: #744210;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 4px;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
+        }
+
+        .construction-card {
+            background-color: var(--box-bg);
+            border: 2px dashed rgba(236, 201, 75, 0.4);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .caution-tape {
+            height: 12px;
+            background: repeating-linear-gradient(45deg, #ecc94b, #ecc94b 12px, #1a202c 12px, #1a202c 24px);
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .construction-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .construction-header h2 {
+            margin: 0;
+            font-size: 20px;
+            color: #ecc94b;
+            letter-spacing: 0.5px;
+        }
+
+        .construction-icon {
+            font-size: 24px;
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .construction-text {
+            color: var(--text-muted);
+            font-size: 13.5px;
+            line-height: 1.6;
+            max-width: 580px;
+            margin: 0 auto 20px auto;
+        }
+
+        .construction-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 620px;
+        }
+
+        .feature-item {
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            padding: 10px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            line-height: 1.4;
+        }
+
+        .feat-icon {
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        /* Explorer Component */
+        .explorer-card {
+            background-color: var(--box-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .explorer-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            background-color: var(--input-bg);
+            border-bottom: 1px solid var(--border-color);
+            flex-wrap: wrap;
+        }
+
+        .explorer-toolbar-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-grow: 1;
+        }
+
+        .explorer-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        .explorer-filter {
+            flex-grow: 1;
+            max-width: 260px;
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            background-color: var(--box-bg);
+            color: var(--text-main);
+            font-size: 13px;
+            outline: none;
+        }
+
+        .explorer-filter:focus {
+            border-color: var(--win-blue);
+        }
+
+        .explorer-toolbar-right {
+            display: flex;
+            gap: 6px;
+        }
+
+        .explorer-btn {
+            background: var(--box-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 5px 11px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .explorer-btn:hover {
+            background: var(--hover-bg);
+            border-color: var(--win-blue);
+            color: var(--win-blue);
+        }
+
+        .explorer-tree {
+            padding: 12px 10px;
+            max-height: 550px;
+            overflow-y: auto;
+        }
+
+        /* Tree Styles */
+        .tree-branch {
+            margin-bottom: 3px;
+        }
+
+        .tree-row {
+            display: flex;
+            align-items: center;
+            padding: 6px 10px;
+            border-radius: 6px;
+            user-select: none;
+            transition: background-color 0.15s ease;
+            gap: 8px;
+        }
+
+        .folder-row {
+            cursor: pointer;
+        }
+
+        .folder-row:hover {
+            background-color: var(--hover-bg);
+        }
+
+        .file-row {
+            padding: 5px 10px;
+        }
+
+        .file-row:hover {
+            background-color: var(--hover-bg);
+        }
+
+        .tree-toggle {
+            display: inline-block;
+            width: 14px;
+            font-size: 10px;
+            color: var(--text-muted);
+            transition: transform 0.2s ease;
+            text-align: center;
+        }
+
+        .tree-toggle.open {
+            transform: rotate(90deg);
+        }
+
+        .tree-spacer {
+            width: 14px;
+            display: inline-block;
+        }
+
+        .tree-icon {
+            font-size: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tree-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .tree-file-name {
+            font-size: 13.5px;
+            color: var(--text-main);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .tree-badge {
+            font-size: 11px;
+            padding: 2px 7px;
+            border-radius: 10px;
+            background: rgba(66, 153, 225, 0.15);
+            color: var(--win-blue);
+            font-weight: 600;
+            margin-left: auto;
+        }
+
+        .tree-dl-btn {
+            background-color: var(--win-blue);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 4px 12px;
+            border-radius: 6px;
+            margin-left: auto;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        .tree-dl-btn:hover {
+            background-color: var(--win-blue-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(66, 153, 225, 0.4);
+        }
+
+        .tree-children {
+            margin-left: 18px;
+            padding-left: 10px;
+            border-left: 1px dashed var(--border-color);
+        }
+
+        .tree-msg {
+            margin: 8px 10px 12px 10px;
+            padding: 10px 14px;
+            font-size: 13px;
+            border-radius: 6px;
+            text-align: left;
+        }
+
+        .tree-build-msg {
+            margin: 3px 10px 8px 32px;
+            padding: 6px 12px;
+            font-size: 12px;
+            border-radius: 6px;
+            text-align: left;
+        }
+
+        /* Animations */
+        @keyframes fadeSlideIn {
+            from { opacity: 0; transform: translateY(-15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @media (max-width: 600px) {
+            .archive-box { padding: 20px 15px; }
+            h1 { font-size: 24px; }
+            .explorer-toolbar { flex-direction: column; align-items: stretch; }
+            .explorer-toolbar-left { flex-direction: column; align-items: stretch; }
+            .explorer-filter { max-width: 100%; }
+            .explorer-toolbar-right { justify-content: space-between; }
+            .tree-children { margin-left: 10px; padding-left: 6px; }
+            .tree-dl-btn { padding: 3px 8px; font-size: 11px; }
         }
     </style>
 </head>
 <body>
 
     <div class="archive-box">
+        <div class="top-controls">
+            <button class="theme-toggle" id="theme-toggle" title="Toggle Dark/Light Mode">☀️</button>
+        </div>
+
+
         <h1>The Ultimate Windows Archive</h1>
- <p>
-    <strong>Welcome to the archive!</strong><br>
-    Please note that this collection is a  work in progress and is not yet complete. If you spot a missing build or have suggestions for the site, I would love your help!
-</p>
+        <p class="subtitle" id="total-builds">Archiving 0 builds across 0 Windows versions</p>
+        
+        <p class="description">
+            <strong>Welcome to the archive!</strong><br>
+            Please note that this collection is a work in progress. If you spot a missing build, I would love your help!<br>
+            ✉️ <a href="mailto:jamesbondulance68@gmail.com" style="color:var(--win-blue)">jamesbondulance68@gmail.com</a> | 💬 Discord: @themovieguy2025
+        </p>
 
-<p>
-    <strong>Feel free to reach out:</strong><br>
-    ✉️ Email: <a href="mailto:jamesbondulance68@gmail.com">jamesbondulance68@gmail.com</a><br>
-    💬 Discord: @themovieguy2025
-</p>
-        <div class="step">
-            <label for="category-select">1. Select Category</label>
-            <select id="category-select">
-                <option value="" disabled selected>-- Select Type --</option>
-                <option value="Consumer">Client</option>
-                <option value="Server">Server</option>
-            </select>
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="🔍 Search OS, Series, or Build (e.g., '95 rtm', 'whistler')">
+            <div id="search-results" class="search-results"></div>
         </div>
 
-        <div class="step">
-            <label for="version-select">2. Operating System</label>
-            <select id="version-select" disabled>
-                <option value="" disabled selected>-- Select OS --</option>
-            </select>
+        <!-- View Switcher -->
+        <div class="view-switch">
+            <button id="view-wizard-btn" class="view-tab active" type="button"><span class="tab-icon">🔽</span> Dropdown</button>
+            <button id="view-tree-btn" class="view-tab" type="button"><span class="tab-icon">📁</span> List</button>
+            <button id="view-vmkit-btn" class="view-tab" type="button"><span class="tab-icon">🧰</span> VM Toolkit <span class="construction-badge">🚧 Under Construction</span></button>
         </div>
 
-        <div id="custom-message" class="warning-box hidden"></div>
+        <!-- Dropdown View (Default) -->
+        <div id="wizard-view" class="view-section">
+            <div class="steps-container">
+                <div class="step active" id="category-step">
+                    <label for="category-select">Select Category</label>
+                    <select id="category-select">
+                        <option value="" disabled selected>-- Select Type --</option>
+                        <option value="Consumer">Client</option>
+                        <option value="Server">Server</option>
+                    </select>
+                </div>
 
-        <div class="step hidden" id="update-step">
-            <label for="update-select">3. Product Series</label>
-            <select id="update-select"></select>
+                <div class="step active" id="version-step">
+                    <label for="version-select">Operating System</label>
+                    <select id="version-select" disabled>
+                        <option value="" disabled selected>-- Select OS --</option>
+                    </select>
+                </div>
+
+
+                <div class="step" id="update-step">
+                    <label for="update-select">Product Series</label>
+                    <select id="update-select"></select>
+                </div>
+
+                <div class="step active" id="build-step">
+                    <label for="build-select">Select Build</label>
+                    <select id="build-select" disabled>
+                        <option value="" disabled selected>-- Select Build --</option>
+                    </select>
+                </div>
+
+
+                <div class="step" id="edition-step">
+                    <label for="edition-select">Choose Edition</label>
+                    <select id="edition-select"></select>
+                </div>
+
+                <div class="step" id="arch-step">
+                    <label for="arch-select">Architecture</label>
+                    <select id="arch-select"></select>
+                </div>
+            </div>
+
+            <div id="download-section">
+                <div id="custom-message" class="warning-box hidden"></div>
+                <div id="build-message" class="warning-box hidden"></div>
+                <a id="download-btn" class="download-btn" href="#" target="_blank">Download Build</a>
+            </div>
         </div>
 
-        <div class="step">
-            <label for="build-select">4. Select Build</label>
-            <select id="build-select" disabled>
-                <option value="" disabled selected>-- Select Build --</option>
-            </select>
+        <!-- Static View (Folder Explorer) -->
+        <div id="explorer-view" class="view-section" style="display: none;">
+            <div class="explorer-card">
+                <div class="explorer-toolbar">
+                    <div class="explorer-toolbar-left">
+                        <span class="explorer-title">📁 All Files & Builds</span>
+                        <input type="text" id="explorer-filter-input" placeholder="⚡ Filter folders & builds..." class="explorer-filter">
+                    </div>
+                    <div class="explorer-toolbar-right">
+                        <button id="btn-expand-all" class="explorer-btn" type="button" title="Expand All Folders">📂 Expand All</button>
+                        <button id="btn-collapse-all" class="explorer-btn" type="button" title="Collapse All Folders">📁 Collapse All</button>
+                    </div>
+                </div>
+                <div id="explorer-tree" class="explorer-tree">
+                    <!-- Injected by JS -->
+                </div>
+            </div>
         </div>
 
-        <div id="build-message" class="warning-box hidden"></div>
+        <!-- VM Toolkit View (Under Construction) -->
+        <div id="vmkit-view" class="view-section" style="display: none;">
+            <div class="construction-card">
+                <div class="caution-tape"></div>
+                <div class="construction-header">
+                    <span class="construction-icon">🚧</span>
+                    <h2>VM Toolkit Under Construction</h2>
+                    <span class="construction-icon">🚧</span>
+                </div>
+                <p class="construction-text">
+                    The <strong>Universal VM Toolkit</strong> is currently being assembled and tested! Once released, it will include everything you need to run historical Windows builds in <strong>86Box, PCem, VirtualBox, VMware, and QEMU</strong>.
+                </p>
 
-        <div class="step hidden" id="edition-step">
-            <label for="edition-select">5. Choose Edition</label>
-            <select id="edition-select"></select>
+                <div class="construction-features">
+                    <div class="feature-item">
+                        <span class="feat-icon">💾</span>
+                        <div><strong>Universal Boot Floppies:</strong> MS-DOS 6.22 OEM with CD-ROM drivers, Win 95/98/ME, and NT/2000/XP boot sets.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feat-icon">🎨</span>
+                        <div><strong>Display & Sound Drivers:</strong> VBEMP 9x/NT4, SciTech Display Doctor, S3 Trio64, Sound Blaster 16/AWE, Ensoniq, AC'97.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feat-icon">💽</span>
+                        <div><strong>VirtIO & Modern Hypervisor Pack:</strong> Drivers for Windows XP through Windows 11 and Server 2008–2025.</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feat-icon">🩹</span>
+                        <div><strong>Patches & Speed Fixes:</strong> Win 95 AMD K6 fast CPU fix, Win 98 512MB RAM limiter, 137GB disk patch, Win 11 TPM bypass.</div>
+                    </div>
+                </div>
+
+                <div class="caution-tape" style="margin-top: 25px;"></div>
+                <div style="text-align: center; font-size: 12px; color: var(--text-muted); margin-top: 10px;">
+                    Stay tuned — commit and release coming soon!
+                </div>
+            </div>
         </div>
 
-        <div class="step hidden" id="arch-step">
-            <label for="arch-select">6. Architecture</label>
-            <select id="arch-select"></select>
-        </div>
-
-        <div id="download-section" class="hidden">
-            <a id="download-btn" class="download-btn" href="#" target="_blank">Download</a>
+        <!-- Last Added Banner (bottom) -->
+        <div class="recent-banner" style="margin-top: 25px;">
+            <div class="recent-banner-title">Last Added</div>
+            <ul class="recent-list" id="recent-list">
+                <!-- Injected by JS -->
+            </ul>
         </div>
     </div>
-     <script src="database.js"></script>
 
-    <script>
-        const cSel = document.getElementById('category-select');
-        const vSel = document.getElementById('version-select');
-        const uSel = document.getElementById('update-select');
-        const bSel = document.getElementById('build-select');
-        const eSel = document.getElementById('edition-select');
-        const aSel = document.getElementById('arch-select');
+    <!-- Load the database -->
+    <script src="database.js" defer></script>
 
-        const uStep = document.getElementById('update-step');
-        const eStep = document.getElementById('edition-step');
-        const aStep = document.getElementById('arch-step');
-        const dlSec = document.getElementById('download-section');
-        const dlBtn = document.getElementById('download-btn');
-        const msgOS = document.getElementById('custom-message');
-        const msgBuild = document.getElementById('build-message');
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            // ==========================================
+            // THEME LOGIC
+            // ==========================================
+            const themeToggle = document.getElementById('theme-toggle');
+            const metaTheme = document.getElementById('meta-theme-color');
+            const currentTheme = localStorage.getItem('theme') || 'dark';
+            
+            function setTheme(theme) {
+                if (theme === 'light') {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    themeToggle.innerText = '🌙';
+                    metaTheme.setAttribute('content', '#ffffff');
+                } else {
+                    document.documentElement.removeAttribute('data-theme');
+                    themeToggle.innerText = '☀️';
+                    metaTheme.setAttribute('content', '#1a202c');
+                }
+                localStorage.setItem('theme', theme);
+            }
+            
+            setTheme(currentTheme);
+            
+            themeToggle.addEventListener('click', () => {
+                const newTheme = document.documentElement.hasAttribute('data-theme') ? 'dark' : 'light';
+                setTheme(newTheme);
+            });
 
-        cSel.onchange = function() {
-            resetUI('category');
-            vSel.disabled = false;
-            const versions = Object.keys(windowsDatabase[this.value]);
-            versions.forEach(v => vSel.add(new Option(v, v)));
-        };
+            // ==========================================
+            // RECENTLY ADDED
+            // ==========================================
+            const recentlyAdded = [
+                { os: "Windows 2000", build: "", date: "2025-05" },
+                { os: "Windows XP", build: "", date: "2025-09" }
+            ];
+            const recentList = document.getElementById('recent-list');
+            recentlyAdded.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${item.os}</strong> - ${item.build} <span class="recent-date">(${item.date})</span>`;
+                recentList.appendChild(li);
+            });
 
-        vSel.onchange = function() {
-            const osData = windowsDatabase[cSel.value][this.value];
-            resetUI('version');
-
-            if (osData.message) { 
-                msgOS.innerHTML = osData.message; 
-                msgOS.classList.remove('hidden'); 
+            // ==========================================
+            // DATABASE PRE-PROCESSING (Stats & Search)
+            // ==========================================
+            let totalBuildCount = 0;
+            let osCountTracker = {};
+            const searchIndex = [];
+            
+            // Assuming windowsDatabase is loaded globally from database.js
+            if (typeof windowsDatabase !== 'undefined') {
+                for (const cat in windowsDatabase) {
+                    for (const os in windowsDatabase[cat]) {
+                        let osBuildCount = 0;
+                        const osData = windowsDatabase[cat][os];
+                        
+                        if (osData.updates) {
+                            for (const series in osData.updates) {
+                                for (const build in osData.updates[series]) {
+                                    const buildData = osData.updates[series][build];
+                                    let nodeCount = 0;
+                                    
+                                    // Count leaf URLs and build search index paths
+                                    if (typeof buildData === 'string') {
+                                        nodeCount++;
+                                    } else {
+                                        for (const ed in buildData) {
+                                            if (typeof buildData[ed] === 'string') {
+                                                nodeCount++;
+                                            } else {
+                                                for (const arch in buildData[ed]) {
+                                                    nodeCount++;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                    osBuildCount += nodeCount;
+                                    
+                                    searchIndex.push({
+                                        pathText: `${os} > ${series}`,
+                                        buildTitle: build,
+                                        searchString: `${os} ${series} ${build}`.toLowerCase(),
+                                        osMessage: osData.message || null,
+                                        buildMessage: osData.buildMessages ? osData.buildMessages[build] : null,
+                                        data: buildData // string or object
+                                    });
+                                }
+                            }
+                        }
+                        osCountTracker[os] = osBuildCount;
+                        totalBuildCount += osBuildCount;
+                    }
+                }
+                
+                // Update stats UI
+                document.getElementById('total-builds').innerText = `Archiving ${totalBuildCount} builds across ${Object.keys(osCountTracker).length} Windows versions`;
+                
             }
 
-            const updateKeys = Object.keys(osData.updates);
-            if (updateKeys.length > 1 || updateKeys[0] !== "Main Releases") {
-                uStep.classList.remove('hidden');
-                uSel.innerHTML = '<option value="" disabled selected>-- Select Series --</option>';
-                updateKeys.forEach(k => uSel.add(new Option(k, k)));
-            } else {
-                loadBuilds(osData.updates[updateKeys[0]]);
+            // ==========================================
+            // SEARCH FUNCTIONALITY
+            // ==========================================
+            const searchInput = document.getElementById('search-input');
+            const searchResults = document.getElementById('search-results');
+
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase().trim();
+                searchResults.innerHTML = '';
+                
+                if (query.length < 2) {
+                    searchResults.classList.remove('active');
+                    return;
+                }
+                
+                const terms = query.split(' ');
+                const matches = searchIndex.filter(item => {
+                    return terms.every(term => item.searchString.includes(term));
+                }).slice(0, 50); // limit to 50 results
+                
+                if (matches.length > 0) {
+                    searchResults.classList.add('active');
+                    matches.forEach((match, index) => {
+                        const div = document.createElement('div');
+                        div.className = 'search-item';
+                        div.innerHTML = `
+                            <div class="search-path">${match.pathText}</div>
+                            <div class="search-title">${match.buildTitle}</div>
+                        `;
+                        
+                        div.addEventListener('click', function(ev) {
+                            // Close search results
+                            searchResults.classList.remove('active');
+                            searchInput.value = '';
+
+                            // Switch to Dropdown view
+                            const viewWizardBtn = document.getElementById('view-wizard-btn');
+                            const viewTreeBtn = document.getElementById('view-tree-btn');
+                            const viewVmkitBtn = document.getElementById('view-vmkit-btn');
+                            const explorerView = document.getElementById('explorer-view');
+                            const wizardView = document.getElementById('wizard-view');
+                            const vmkitView = document.getElementById('vmkit-view');
+                            if (wizardView && explorerView) {
+                                viewWizardBtn.classList.add('active');
+                                if (viewTreeBtn) viewTreeBtn.classList.remove('active');
+                                if (viewVmkitBtn) viewVmkitBtn.classList.remove('active');
+                                explorerView.style.display = 'none';
+                                if (vmkitView) vmkitView.style.display = 'none';
+                                wizardView.style.display = 'block';
+                            }
+
+                            // Reset steps UI
+                            resetUI('category');
+
+                            // Show OS message if applicable
+                            if (match.osMessage) {
+                                msgOS.innerHTML = match.osMessage;
+                                msgOS.classList.remove('hidden');
+                            }
+
+                            // Show build message if applicable
+                            if (match.buildMessage) {
+                                msgBuild.innerHTML = match.buildMessage;
+                                msgBuild.classList.remove('hidden');
+                            }
+
+                            // Handle the download link
+                            if (typeof match.data === 'string') {
+                                showLink(match.data);
+                            } else {
+                                // Has editions — show edition selector in main UI
+                                eStep.classList.add('active');
+                                eSel.innerHTML = '<option value="" disabled selected>-- Select Edition --</option>';
+                                const edKeys = Object.keys(match.data);
+                                edKeys.forEach(ed => eSel.add(new Option(ed, ed)));
+
+                                // Store reference for edition/arch selection
+                                eSel.onchange = function() {
+                                    const edVal = match.data[this.value];
+                                    aStep.classList.remove('active');
+                                    dlSec.classList.remove('active');
+
+                                    if (typeof edVal === 'string') {
+                                        showLink(edVal);
+                                    } else {
+                                        // Has architectures
+                                        aStep.classList.add('active');
+                                        aSel.innerHTML = '<option value="" disabled selected>-- Select Architecture --</option>';
+                                        for (let ar in edVal) {
+                                            aSel.add(new Option(ar, ar));
+                                        }
+                                        aSel.onchange = function() {
+                                            showLink(edVal[this.value]);
+                                        };
+                                    }
+                                };
+                            }
+
+                            // Scroll to download area
+                            wizardView.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        });
+                        
+                        searchResults.appendChild(div);
+                    });
+                } else {
+                    searchResults.classList.remove('active');
+                }
+            });
+
+            // Hide search when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+                    searchResults.classList.remove('active');
+                }
+            });
+            
+            searchInput.addEventListener('focus', () => {
+                if (searchResults.children.length > 0) searchResults.classList.add('active');
+            });
+
+
+            // ==========================================
+            // MAIN BROWSING FLOW LOGIC
+            // ==========================================
+            const cSel = document.getElementById('category-select');
+            const vSel = document.getElementById('version-select');
+            const uSel = document.getElementById('update-select');
+            const bSel = document.getElementById('build-select');
+            const eSel = document.getElementById('edition-select');
+            const aSel = document.getElementById('arch-select');
+
+            const uStep = document.getElementById('update-step');
+            const eStep = document.getElementById('edition-step');
+            const aStep = document.getElementById('arch-step');
+            const dlSec = document.getElementById('download-section');
+            const dlBtn = document.getElementById('download-btn');
+            
+            const msgOS = document.getElementById('custom-message');
+            const msgBuild = document.getElementById('build-message');
+
+
+            cSel.onchange = function() {
+                resetUI('category');
+                vSel.disabled = false;
+                if (!windowsDatabase) return;
+                const versions = Object.keys(windowsDatabase[this.value]);
+                versions.forEach(v => vSel.add(new Option(v, v)));
+            };
+
+            vSel.onchange = function() {
+                const osName = this.value;
+                const osData = windowsDatabase[cSel.value][osName];
+                
+                msgOS.classList.add('hidden'); // Clear previous OS message
+                resetUI('version'); // resets everything below OS
+
+                // Store OS Warning Message (will show when download section becomes active)
+                if (osData.message) { 
+                    msgOS.innerHTML = osData.message; 
+                    msgOS.dataset.hasMessage = 'true';
+                } else {
+                    msgOS.dataset.hasMessage = 'false';
+                }
+
+                const updateKeys = Object.keys(osData.updates);
+                if (updateKeys.length > 1 || updateKeys[0] !== "Main Releases") {
+                    uStep.classList.add('active');
+                    uSel.innerHTML = '<option value="" disabled selected>-- Select Series --</option>';
+                    updateKeys.forEach(k => uSel.add(new Option(k, k)));
+                } else {
+                    loadBuilds(osData.updates[updateKeys[0]]);
+                }
+            };
+
+            uSel.onchange = function() { 
+                loadBuilds(windowsDatabase[cSel.value][vSel.value].updates[this.value]); 
+            };
+
+            function loadBuilds(buildData) {
+                resetUI('update'); // Only resets builds and below, keeps msgOS intact
+                bSel.innerHTML = '<option value="" disabled selected>-- Select Build --</option>';
+                for (let b in buildData) bSel.add(new Option(b, b));
+                bSel.disabled = false;
             }
-        };
 
-        uSel.onchange = function() { 
-            loadBuilds(windowsDatabase[cSel.value][vSel.value].updates[this.value]); 
-        };
+            bSel.onchange = function() {
+                const osData = windowsDatabase[cSel.value][vSel.value];
+                const updateKey = !uStep.classList.contains('active') ? Object.keys(osData.updates)[0] : uSel.value;
+                const buildData = osData.updates[updateKey][this.value];
 
-        function loadBuilds(buildData) {
-            resetUI('update'); // Only resets builds and below
-            bSel.innerHTML = '<option value="" disabled selected>-- Select Build --</option>';
-            for (let b in buildData) bSel.add(new Option(b, b));
-            bSel.disabled = false;
-        }
+                // Clear previous final steps
+                eStep.classList.remove('active');
+                aStep.classList.remove('active');
+                dlSec.classList.remove('active');
 
-        bSel.onchange = function() {
-            const osData = windowsDatabase[cSel.value][vSel.value];
-            const updateKey = uStep.classList.contains('hidden') ? Object.keys(osData.updates)[0] : uSel.value;
-            const buildData = osData.updates[updateKey][this.value];
+                if (osData.buildMessages && osData.buildMessages[this.value]) {
+                    msgBuild.innerHTML = osData.buildMessages[this.value];
+                    msgBuild.classList.remove('hidden');
+                } else {
+                    msgBuild.classList.add('hidden');
+                }
 
-            // Clear previous final steps
-            eStep.classList.add('hidden');
-            aStep.classList.add('hidden');
-            dlSec.classList.add('hidden');
+                processLevel(buildData, eStep, eSel);
+            };
 
-            if (osData.buildMessages && osData.buildMessages[this.value]) {
-                msgBuild.innerHTML = osData.buildMessages[this.value];
-                msgBuild.classList.remove('hidden');
-            } else {
+            eSel.onchange = function() {
+                const osData = windowsDatabase[cSel.value][vSel.value];
+                const updateKey = !uStep.classList.contains('active') ? Object.keys(osData.updates)[0] : uSel.value;
+                const editionData = osData.updates[updateKey][bSel.value][this.value];
+                
+                aStep.classList.remove('active');
+                dlSec.classList.remove('active');
+                processLevel(editionData, aStep, aSel);
+            };
+
+            aSel.onchange = function() {
+                const osData = windowsDatabase[cSel.value][vSel.value];
+                const updateKey = !uStep.classList.contains('active') ? Object.keys(osData.updates)[0] : uSel.value;
+                const link = osData.updates[updateKey][bSel.value][eSel.value][this.value];
+                showLink(link);
+            };
+
+            function processLevel(data, nextStepContainer, nextSelector) {
+                if (typeof data === 'string') {
+                    showLink(data);
+                } else {
+                    nextStepContainer.classList.add('active');
+                    nextSelector.innerHTML = '<option value="" disabled selected>-- Select Option --</option>';
+                    for (let k in data) {
+                        nextSelector.add(new Option(k, k));
+                    }
+                }
+            }
+
+            function resetUI(lvl) {
+                if (lvl === 'category') {
+                    vSel.innerHTML = '<option value="" disabled selected>-- Select OS --</option>';
+                    vSel.disabled = true;
+                    uStep.classList.remove('active');
+                    msgOS.classList.add('hidden');
+                }
+                if (lvl === 'version') {
+                    uStep.classList.remove('active');
+                    // We purposefully DO NOT hide msgOS here so it persists when switching series
+                }
+                
+                // Builds and below always reset
+                bSel.disabled = true;
+                bSel.innerHTML = '<option value="" disabled selected>-- Select Build --</option>';
+                eStep.classList.remove('active');
+                aStep.classList.remove('active');
+                dlSec.classList.remove('active');
                 msgBuild.classList.add('hidden');
             }
 
-            processLevel(buildData, eStep, eSel);
-        };
-
-        eSel.onchange = function() {
-            const osData = windowsDatabase[cSel.value][vSel.value];
-            const updateKey = uStep.classList.contains('hidden') ? Object.keys(osData.updates)[0] : uSel.value;
-            const editionData = osData.updates[updateKey][bSel.value][this.value];
-            
-            aStep.classList.add('hidden');
-            dlSec.classList.add('hidden');
-            processLevel(editionData, aStep, aSel);
-        };
-
-        aSel.onchange = function() {
-            const osData = windowsDatabase[cSel.value][vSel.value];
-            const updateKey = uStep.classList.contains('hidden') ? Object.keys(osData.updates)[0] : uSel.value;
-            const link = osData.updates[updateKey][bSel.value][eSel.value][this.value];
-            showLink(link);
-        };
-
-        /**
-         * UPDATED CORE ENGINE:
-         * 1. Check if the current level is already a link (string).
-         * 2. If it's an object, it correctly populates the next dropdown.
-         */
-        function processLevel(data, nextStepContainer, nextSelector) {
-            if (typeof data === 'string') {
-                showLink(data);
-            } else {
-                nextStepContainer.classList.remove('hidden');
-                nextSelector.innerHTML = '<option value="" disabled selected>-- Select Option --</option>';
-                for (let k in data) {
-                    nextSelector.add(new Option(k, k));
+            function showLink(url) {
+                dlBtn.href = url;
+                dlSec.classList.add('active');
+                // Reveal stored OS message if present
+                if (msgOS.dataset.hasMessage === 'true') {
+                    msgOS.classList.remove('hidden');
                 }
             }
-        }
 
-        function resetUI(lvl) {
-            if (lvl === 'category') {
-                vSel.innerHTML = '<option value="" disabled selected>-- Select OS --</option>';
-                vSel.disabled = true;
-                uStep.classList.add('hidden');
+            // ==========================================
+            // FILE EXPLORER TREE LOGIC
+            // ==========================================
+            function countLeaves(node) {
+                if (typeof node === 'string') return 1;
+                let count = 0;
+                for (const k in node) {
+                    count += countLeaves(node[k]);
+                }
+                return count;
             }
-            if (lvl === 'version') {
-                uStep.classList.add('hidden');
-            }
-            // Builds and below always reset on version/category change
-            bSel.disabled = true;
-            bSel.innerHTML = '<option value="" disabled selected>-- Select Build --</option>';
-            eStep.classList.add('hidden');
-            aStep.classList.add('hidden');
-            dlSec.classList.add('hidden');
-            msgOS.classList.add('hidden');
-            msgBuild.classList.add('hidden');
-        }
 
-        function showLink(url) {
-            dlBtn.href = url;
-            dlSec.classList.remove('hidden');
-        }
+            function getFileIcon(url) {
+                const lower = (url || '').toLowerCase();
+                if (lower.endsWith('.zip') || lower.endsWith('.7z') || lower.endsWith('.rar')) return '📦';
+                if (lower.endsWith('.img') || lower.endsWith('.ima') || lower.endsWith('.vmdk')) return '💾';
+                return '💿';
+            }
+
+            function renderTreeLeaf(title, url, buildMsg) {
+                const icon = getFileIcon(url);
+                return `
+                <div class="tree-leaf">
+                    <div class="tree-row file-row">
+                        <span class="tree-spacer"></span>
+                        <span class="tree-icon">${icon}</span>
+                        <span class="tree-file-name" title="${title}">${title}</span>
+                        <a href="${url}" target="_blank" rel="noopener noreferrer" class="tree-dl-btn">Download ⬇️</a>
+                    </div>
+                    ${buildMsg ? `<div class="tree-build-msg warning-box">${buildMsg}</div>` : ''}
+                </div>
+                `;
+            }
+
+            function renderNestedNode(title, data, buildMsg) {
+                if (typeof data === 'string') {
+                    return renderTreeLeaf(title, data, buildMsg);
+                }
+
+                const count = countLeaves(data);
+                let subHtml = `
+                <div class="tree-branch" data-level="sub">
+                    <div class="tree-row folder-row" onclick="window.toggleTreeNode(this)">
+                        <span class="tree-toggle">▶</span>
+                        <span class="tree-icon">📁</span>
+                        <span class="tree-label">${title}</span>
+                        <span class="tree-badge">${count}</span>
+                    </div>
+                    <div class="tree-children" style="display: none;">
+                `;
+
+                if (buildMsg) {
+                    subHtml += `<div class="tree-build-msg warning-box">${buildMsg}</div>`;
+                }
+
+                for (const k in data) {
+                    subHtml += renderNestedNode(k.trim(), data[k], null);
+                }
+
+                subHtml += `</div></div>`;
+                return subHtml;
+            }
+
+            function buildExplorerTree() {
+                const rootEl = document.getElementById('explorer-tree');
+                if (!rootEl || typeof windowsDatabase === 'undefined') return;
+
+                let html = '';
+                for (const catKey in windowsDatabase) {
+                    const catLabel = catKey === 'Consumer' ? 'Client' : catKey;
+                    const catData = windowsDatabase[catKey];
+                    const catCount = countLeaves(catData);
+
+                    html += `
+                    <div class="tree-branch" data-level="category">
+                        <div class="tree-row folder-row" onclick="window.toggleTreeNode(this)">
+                            <span class="tree-toggle">▶</span>
+                            <span class="tree-icon">📁</span>
+                            <span class="tree-label">${catLabel}</span>
+                            <span class="tree-badge">${catCount} builds</span>
+                        </div>
+                        <div class="tree-children" style="display: none;">
+                    `;
+
+                    for (const osKey in catData) {
+                        const osData = catData[osKey];
+                        const osCount = countLeaves(osData.updates);
+
+                        html += `
+                        <div class="tree-branch" data-level="os">
+                            <div class="tree-row folder-row" onclick="window.toggleTreeNode(this)">
+                                <span class="tree-toggle">▶</span>
+                                <span class="tree-icon">📁</span>
+                                <span class="tree-label">${osKey}</span>
+                                <span class="tree-badge">${osCount}</span>
+                            </div>
+                            <div class="tree-children" style="display: none;">
+                        `;
+
+                        if (osData.message) {
+                            html += `<div class="tree-msg warning-box">${osData.message}</div>`;
+                        }
+
+                        if (osData.updates) {
+                            for (const seriesKey in osData.updates) {
+                                const seriesData = osData.updates[seriesKey];
+                                const seriesCount = countLeaves(seriesData);
+
+                                html += `
+                                <div class="tree-branch" data-level="series">
+                                    <div class="tree-row folder-row" onclick="window.toggleTreeNode(this)">
+                                        <span class="tree-toggle">▶</span>
+                                        <span class="tree-icon">📁</span>
+                                        <span class="tree-label">${seriesKey.trim()}</span>
+                                        <span class="tree-badge">${seriesCount}</span>
+                                    </div>
+                                    <div class="tree-children" style="display: none;">
+                                `;
+
+                                for (const buildKey in seriesData) {
+                                    const buildData = seriesData[buildKey];
+                                    const buildMsg = (osData.buildMessages && (osData.buildMessages[buildKey] || osData.buildMessages[buildKey.trim()])) || null;
+
+                                    html += renderNestedNode(buildKey.trim(), buildData, buildMsg);
+                                }
+
+                                html += `</div></div>`;
+                            }
+                        }
+
+                        html += `</div></div>`;
+                    }
+
+                    html += `</div></div>`;
+                }
+
+                rootEl.innerHTML = html;
+
+                // Auto-expand Category folders initially (Client & Server)
+                document.querySelectorAll('#explorer-tree > .tree-branch > .folder-row').forEach(row => {
+                    window.toggleTreeNode(row, true);
+                });
+            }
+
+            // Expose globally for onclick attributes
+            window.toggleTreeNode = function(rowEl, forceOpen = null) {
+                const branch = rowEl.parentElement;
+                const children = branch.querySelector(':scope > .tree-children');
+                const toggleIcon = rowEl.querySelector('.tree-toggle');
+                const folderIcon = rowEl.querySelector('.tree-icon');
+
+                if (!children) return;
+
+                const shouldOpen = forceOpen !== null ? forceOpen : children.style.display === 'none';
+                if (shouldOpen) {
+                    children.style.display = 'block';
+                    if (toggleIcon) toggleIcon.classList.add('open');
+                    if (folderIcon) folderIcon.textContent = '📂';
+                    rowEl.classList.add('open');
+                } else {
+                    children.style.display = 'none';
+                    if (toggleIcon) toggleIcon.classList.remove('open');
+                    if (folderIcon) folderIcon.textContent = '📁';
+                    rowEl.classList.remove('open');
+                }
+            };
+
+            const btnExpandAll = document.getElementById('btn-expand-all');
+            if (btnExpandAll) {
+                btnExpandAll.addEventListener('click', () => {
+                    document.querySelectorAll('#explorer-tree .tree-children').forEach(el => el.style.display = 'block');
+                    document.querySelectorAll('#explorer-tree .tree-toggle').forEach(el => el.classList.add('open'));
+                    document.querySelectorAll('#explorer-tree .tree-icon').forEach(el => {
+                        if (el.parentElement.classList.contains('folder-row')) el.textContent = '📂';
+                    });
+                    document.querySelectorAll('#explorer-tree .folder-row').forEach(el => el.classList.add('open'));
+                });
+            }
+
+            const btnCollapseAll = document.getElementById('btn-collapse-all');
+            if (btnCollapseAll) {
+                btnCollapseAll.addEventListener('click', () => {
+                    document.querySelectorAll('#explorer-tree .tree-children').forEach(el => el.style.display = 'none');
+                    document.querySelectorAll('#explorer-tree .tree-toggle').forEach(el => el.classList.remove('open'));
+                    document.querySelectorAll('#explorer-tree .tree-icon').forEach(el => {
+                        if (el.parentElement.classList.contains('folder-row')) el.textContent = '📁';
+                    });
+                    document.querySelectorAll('#explorer-tree .folder-row').forEach(el => el.classList.remove('open'));
+                });
+            }
+
+            // Filter inside Explorer tree
+            const explorerFilterInput = document.getElementById('explorer-filter-input');
+            if (explorerFilterInput) {
+                explorerFilterInput.addEventListener('input', (e) => {
+                    const term = e.target.value.toLowerCase().trim();
+                    const leaves = document.querySelectorAll('#explorer-tree .tree-leaf');
+                    const branches = document.querySelectorAll('#explorer-tree .tree-branch');
+
+                    if (!term) {
+                        leaves.forEach(l => l.style.display = '');
+                        branches.forEach(b => b.style.display = '');
+                        document.querySelectorAll('#explorer-tree .tree-children').forEach(c => c.style.display = 'none');
+                        document.querySelectorAll('#explorer-tree .tree-toggle').forEach(t => t.classList.remove('open'));
+                        document.querySelectorAll('#explorer-tree .tree-icon').forEach(i => {
+                            if (i.parentElement.classList.contains('folder-row')) i.textContent = '📁';
+                        });
+                        document.querySelectorAll('#explorer-tree > .tree-branch > .folder-row').forEach(row => {
+                            window.toggleTreeNode(row, true);
+                        });
+                        return;
+                    }
+
+                    leaves.forEach(leaf => {
+                        const text = leaf.textContent.toLowerCase();
+                        const matches = text.includes(term);
+                        leaf.style.display = matches ? '' : 'none';
+
+                        if (matches) {
+                            let curr = leaf.parentElement;
+                            while (curr && curr.id !== 'explorer-tree') {
+                                if (curr.classList.contains('tree-children')) {
+                                    curr.style.display = 'block';
+                                    const row = curr.previousElementSibling;
+                                    if (row && row.classList.contains('folder-row')) {
+                                        const toggle = row.querySelector('.tree-toggle');
+                                        const icon = row.querySelector('.tree-icon');
+                                        if (toggle) toggle.classList.add('open');
+                                        if (icon) icon.textContent = '📂';
+                                    }
+                                }
+                                if (curr.classList.contains('tree-branch')) {
+                                    curr.style.display = '';
+                                }
+                                curr = curr.parentElement;
+                            }
+                        }
+                    });
+
+                    branches.forEach(branch => {
+                        const hasVisibleLeaf = branch.querySelector('.tree-leaf:not([style*="display: none"])');
+                        const labelMatches = branch.querySelector(':scope > .tree-row > .tree-label')?.textContent.toLowerCase().includes(term);
+
+                        if (hasVisibleLeaf || labelMatches) {
+                            branch.style.display = '';
+                            if (labelMatches) {
+                                const children = branch.querySelector(':scope > .tree-children');
+                                if (children) {
+                                    children.style.display = 'block';
+                                    children.querySelectorAll('.tree-leaf').forEach(l => l.style.display = '');
+                                }
+                            }
+                        } else {
+                            branch.style.display = 'none';
+                        }
+                    });
+                });
+            }
+
+            // View Switcher Tabs
+            const viewTreeBtn = document.getElementById('view-tree-btn');
+            const viewWizardBtn = document.getElementById('view-wizard-btn');
+            const viewVmkitBtn = document.getElementById('view-vmkit-btn');
+            const explorerView = document.getElementById('explorer-view');
+            const wizardView = document.getElementById('wizard-view');
+            const vmkitView = document.getElementById('vmkit-view');
+
+            function switchView(activeBtn, showView) {
+                [viewWizardBtn, viewTreeBtn, viewVmkitBtn].forEach(b => {
+                    if (b) b.classList.toggle('active', b === activeBtn);
+                });
+                [wizardView, explorerView, vmkitView].forEach(v => {
+                    if (v) v.style.display = (v === showView) ? 'block' : 'none';
+                });
+            }
+
+            if (viewWizardBtn) {
+                viewWizardBtn.addEventListener('click', () => switchView(viewWizardBtn, wizardView));
+            }
+            if (viewTreeBtn) {
+                viewTreeBtn.addEventListener('click', () => switchView(viewTreeBtn, explorerView));
+            }
+            if (viewVmkitBtn) {
+                viewVmkitBtn.addEventListener('click', () => switchView(viewVmkitBtn, vmkitView));
+            }
+
+            // Build the File Explorer tree
+            buildExplorerTree();
+        });
     </script>
 </body>
 </html>

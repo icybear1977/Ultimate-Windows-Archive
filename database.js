@@ -406,7 +406,9 @@
                 " 2504": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2504.0.main.010625-1923_x86fre_client-professional_retail_en-us-XR1PFRE_EN.iso",
                 " 2505 (RC1)": {
                     "Professional": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2505.0.main.010626-1514_x86fre_client-professional_retail_en-us-XR1PFRE_EN.iso",
-                    "Home": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2505.0.main.010626-1514_x86fre_client-home_retail_en-us-XR1HFRE_EN.iso",                " 2509": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2509.0.main.010702-1146_x86fre_client-professional_retail_en-us-XR1PFRE_EN.iso",
+                    "Home": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2505.0.main.010626-1514_x86fre_client-home_retail_en-us-XR1HFRE_EN.iso"
+                },
+                " 2509": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2509.0.main.010702-1146_x86fre_client-professional_retail_en-us-XR1PFRE_EN.iso",
                 " 2517": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2517.0.main.010713-1717_x86fre_client-professional_retail_en-us-XR1PFRE_EN.iso",
                 " 2520": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2520.0.main.010717-1624_x86fre_client-professional_retail_en-us-XR2PFRE_EN.iso",
                 " 2525": {
@@ -421,7 +423,6 @@
                 " 2532": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2532.0.xpclient.010731-1658_x86fre_client-professional_retail_en-us-XR2PFRE_EN.iso",
                 " 2535": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2535.0.xpclient.010803-1621_x86fre_client-professional_retail_en-us-XR2PFRE_EN.iso",
                 " 2542": "https://archive.org/download/MicrosoftWindowsXPBuildCollection/5.1.2542.0.xpclient.010811-1534_x86fre_client-professional_retail_en-us-WXPFRE_EN.iso"
-            }
              },
             "RTM": {
                 " 2600": {
@@ -802,7 +803,7 @@
                " 2190": "https://archive.org/download/MicrosoftWindows2000BuildCollection/5.00.2190.1_x86fre_server-advancedserver_retail_en-us-W2AIS_EN.iso"
             },
             "RTM": {
-                " 2195 (RTM}": {
+                " 2195 (RTM)": {
                     "Professional": "https://archive.org/download/win-2000-rtm-en/Win2000RTM_EN.iso",
                     "Server": "https://archive.org/download/Win2000ServerRTMCHS/5.00.2195.1_x86fre_Server_zh-cn-W2SFPP_CN.iso",
                     "Advanced Server": "https://archive.org/download/windows-2000_202010/Windows%202000%20Advanced%20Server.iso",
