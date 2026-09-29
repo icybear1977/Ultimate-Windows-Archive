@@ -4,3 +4,9 @@
 !.dev.vars.example
 .env*
 !.env.example
+
+# Local backups and dev tools
+*.bak
+admin.html
+VM_KIT_CHECKLIST.md
+scripts/
